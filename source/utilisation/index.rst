@@ -18,6 +18,7 @@ principes de l'application.
     autorisation.rst
     courrier.rst
     dossier.rst
+    travaux.rst
 
  
 

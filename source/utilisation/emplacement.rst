@@ -33,3 +33,8 @@ Il est saisie :
 
 - le complement : texte inséré dans la lettre type (suivant le paramétrage zone = {complement]))
 
+Paramètrage dyn/var.inc ::
+
+    $select_voie=array('ALLEE','ILOT','PLACE','PASSAGE','RANGEE','DIVISION');
+    $select_zone=array('CARRE','COLLINE','ENCLOS','EXTENSION','SECTION');
+    $select_titre=array('','Mr','Mme','Melle');

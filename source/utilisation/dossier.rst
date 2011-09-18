@@ -1,23 +1,23 @@
-.. _courrier:
+.. _dossier:
 
 ##################
-Saisir un courrier
+Upload de document
 ##################
 
 
 
-Il est proposé de décrire dans ce paragraphe de decrire la saisie des lettres type
-dans l'onglet "courrier" de l'emplacement.
+Il est proposé de décrire dans ce paragraphe l'upload de document dans les dossiers
+dans l'onglet "dossier" de l'emplacement.
 
 
-Les courriers envoyés sont listés dans l onglet "courrier"
+Les documents du dossier  sont listés dans l onglet "dossier"
 
-.. image:: ../_static/tab_courrier.png
+.. image:: ../_static/tab_dossier.png
 
 
-Il est possible de creer ou modifier un courrier dans le formulaire ci dessous
+Il est possible de creer ou modifier un dossier dans le formulaire ci dessous
 
-.. image:: ../_static/form_courrier.png
+.. image:: ../_static/form_dossier.png
 
 
 
@@ -25,11 +25,32 @@ Il est possible de creer ou modifier un courrier dans le formulaire ci dessous
 
 Il est saisie :
 
-- le destinataire (concessionnaire ou ayant droit)
+- le fichier a uploader (obligatoire)
 
-- la date d envoi (par defaut la date du jour)
+- la date 
 
-- la lettre type saisi dans om_lettretype (voir guide openMairie)
+- une observation,
 
-- le complement : texte inséré dans la lettre type (suivant le paramétrage zone = {complement]))
+- le type de document: photo ou dossier (pdf)
+
+
+Les documents sont conservés dans le repertoire trs/numero_de_collectivité
+
+Ils sont codifiés de la manière suivante ::
+
+    p_numeroemplacement.png pour la première photo
+    p_numeroemplacement_1.png pour la deuxieme photo
+    ...
+    
+    ou
+    
+    d_numeroemplacement.pdf pour le premier dossier
+    d_numeroemplacement_1.pdf pour le deuxieme dossier
+    ...
+
+Le classement se fait dans un repertoire par centaine de dossier si l'option
+$dossierparcentaine = 1 (conseillé pour éviter d'avoir des milliers de documents
+dans un meme repertoire)
+
+Ce paramètre est en dyn/var.inc
 
