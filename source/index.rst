@@ -1,26 +1,46 @@
-.. openfoncier documentation master file, created by
+.. opencimetiere documentation master file, created by
    sphinx-quickstart on Wed Jul 20 17:30:38 2011.
 
 
-===========================
-openFoncier - Documentation
-===========================
+=============================
+openCimetiere - Documentation
+=============================
 
-Opérationnel pour la réforme du 1er Octobre 2007, openFoncier a donc plus de 4 années d'expérience
-et apparait aujourd'hui comme l'alternative libre avec une architecture  full web, aux solutions propriétaires.
+Créer dans un groupe de l'ADULLACT en 2005, openCimetiere a été en 2006
+projet du mois. Logiciel libre opérationnel depuis des années, la version 3.0.0
+a pour objectif de porter l'application dans un environnement plus moderne :
+openMairie 4.1.0
 
-Son intérét croissant auprès de collectivités de toutes tailles a conduit à prioriser
-une évolution de la version dans un environnement plus moderne (openMairie 4.1.0) pour
-offrir une nouvelle base technique aux futurs développements.
+En effet, la gestion des cimetières devient de plus en plus complexe:
 
-L'intérêt des communautés de communes et d'agglomération de pouvoir interfacer openFoncier
-avec l'information géographique fera évoluer la gestion multicollectivités.
+- la place en milieu urbain devient rare, et les villes s orientent vers des concessions
+temporaires qui demandent plus d effort de gestion,
 
-De nouveaux développements, notament à la ville de Marseille sont programmés et
-permettront de prendre en compte les exigences de grandes villes.
+- les familles se dispersent, les concessions ne sont plus entretenues,
 
-2012 sera donc une année d'évolution importante d'openFoncier avec une approche
-plus générale.
+- les familles se recomposent et il est difficile de connaître les ayant droits.
+
+Dans ce contexte, il devient de plus en plus difficile de gerer les concessions sur des
+fichiers manuels. Quelles sont les concessions qui sont libres ? Quelles sont celles qui vont se libérer ?
+Quelle place y a t il dans cette concession ? Qui sont les ayants droits ? Comment les contacter ?
+
+openCimetiere se place dans ce contexte, dans ce secteur d activité considéré comme peu
+stratégique par les decideurs et pourtant combien important pour le service public de proximité.
+openCimetière veut apporter son aide aux professionnels des cimetières dans la gestion des concessions:
+
+- la gestion de la place (defunt) dans les concessions
+
+- la gestion des autorisations: concessionnaire et ayant droit
+
+- la gestion du terme de la concession: transfert de defunt, transfert à l'ossuaire
+
+- la gestion des concessions libres
+
+- l'archivage systèmatique de l ensemble des données pour constituer une mémoire commune.
+
+Avec les nouveaux outils openMairie 4.1.0 (géolocalisation sur carte, tableaux de bord paramétrable)
+viennent compléter les outils déjà paramétrables (requeteur, courrier type, état et sous état), openCimetiere
+est un outil souple et adaptable à toute organisation quelque soit la taille de la collectivité.
 
 C'est pourquoi ce document a pour but de guider les développeurs et les utilisateurs
 dans la prise en main du projet.
@@ -31,12 +51,11 @@ utilisateur par la balise <Experience>.
 
 Nous proposons aussi des pistes d'évolution en utilisant la balise <proposition>.
 
-
 Il est proposé un premier chapitre permettant la prise en main d'openFoncier sur la
 base du paramètrage standard.
 
 Dans un deuxieme chapitre, il est proposé de décrire le paramètrage de l'application
-afin de personnaliser votre application openFoncier et l'adapter à votre organisation.
+afin de personnaliser votre application openCimetiere et l'adapter à votre organisation.
 
 Dans un troisième chapitre, il est décrit le fonctionnement des traitements spécifiques
 à openFoncier.
