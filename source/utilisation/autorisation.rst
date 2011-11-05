@@ -39,3 +39,6 @@ Il est saisie :
 - le nom marital
 
 
+Le paramètrage du formulaire se fait dans dyn/var.inc ::
+
+    $select_titre=array('','Mr','Mme','Melle'); 

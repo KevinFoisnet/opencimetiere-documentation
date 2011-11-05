@@ -12,7 +12,7 @@ principes de l'application.
 
 .. toctree::
 
-    principe.rst
+    principes.rst
     emplacement.rst
     defunt.rst
     autorisation.rst

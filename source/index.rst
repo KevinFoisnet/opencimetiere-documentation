@@ -5,28 +5,15 @@
 =============================
 openCimetiere - Documentation
 =============================
-
 Créer dans un groupe de l'ADULLACT en 2005, openCimetiere a été en 2006
-projet du mois. Logiciel libre opérationnel depuis des années, la version 3.0.0
+élu "projet du mois". Logiciel libre opérationnel depuis des années, la version 3.0.0
 a pour objectif de porter l'application dans un environnement plus moderne :
 openMairie 4.1.0
 
-En effet, la gestion des cimetières devient de plus en plus complexe:
-
-- la place en milieu urbain devient rare, et les villes s orientent vers des concessions
-temporaires qui demandent plus d effort de gestion,
-
-- les familles se dispersent, les concessions ne sont plus entretenues,
-
-- les familles se recomposent et il est difficile de connaître les ayant droits.
-
-Dans ce contexte, il devient de plus en plus difficile de gerer les concessions sur des
-fichiers manuels. Quelles sont les concessions qui sont libres ? Quelles sont celles qui vont se libérer ?
-Quelle place y a t il dans cette concession ? Qui sont les ayants droits ? Comment les contacter ?
-
-openCimetiere se place dans ce contexte, dans ce secteur d activité considéré comme peu
+openCimetiere se place dans un contexte de gestion difficile, dans ce secteur d activité considéré comme peu
 stratégique par les decideurs et pourtant combien important pour le service public de proximité.
-openCimetière veut apporter son aide aux professionnels des cimetières dans la gestion des concessions:
+openCimetière veut apporter son aide aux professionnels des cimetières dans la gestion des concessions
+et propose :
 
 - la gestion de la place (defunt) dans les concessions
 
@@ -35,6 +22,8 @@ openCimetière veut apporter son aide aux professionnels des cimetières dans la
 - la gestion du terme de la concession: transfert de defunt, transfert à l'ossuaire
 
 - la gestion des concessions libres
+
+- la gestion des opérations funéraires
 
 - l'archivage systèmatique de l ensemble des données pour constituer une mémoire commune.
 
@@ -45,22 +34,16 @@ est un outil souple et adaptable à toute organisation quelque soit la taille de
 C'est pourquoi ce document a pour but de guider les développeurs et les utilisateurs
 dans la prise en main du projet.
 
-Afin de faciliter la lecture, nous avons préciser à chaque fois les
-aspects techniques par la balise <Developpeur> et les aspects liés à l'expérience
-utilisateur par la balise <Experience>.
-
-Nous proposons aussi des pistes d'évolution en utilisant la balise <proposition>.
-
-Il est proposé un premier chapitre permettant la prise en main d'openFoncier sur la
-base du paramètrage standard.
+Il est proposé un premier chapitre permettant la prise en main d'openCimetiere.
 
 Dans un deuxieme chapitre, il est proposé de décrire le paramètrage de l'application
 afin de personnaliser votre application openCimetiere et l'adapter à votre organisation.
 
-Dans un troisième chapitre, il est décrit le fonctionnement des traitements spécifiques
-à openFoncier.
+Dans un troisième chapitre, il est décrit le fonctionnement des operations funeraires.
 
-Enfin le quatrième chapître est consacré aux principes d'intégration avec
+Le quatrième chapitre décrit les traitements spécifiques à openCimetiere.
+
+Enfin le cinquiéme chapître est consacré aux principes d'intégration avec
 d'autres applications (SIG, API google, API bing, API osm, application openCourrier)
 afin de constituer des applications composites (mashup).
 
@@ -73,7 +56,6 @@ http://creativecommons.org/licenses/by-sa/2.0/fr/ ou par courrier postal à
 Creative Commons, 171 Second Street, Suite 300, San Francisco,
 California 94105, USA.
 
-
    
 utilisation
 ===========
@@ -82,6 +64,15 @@ utilisation
    :maxdepth: 3
 
    utilisation/index.rst
+
+operation
+=========
+
+.. toctree::
+   :maxdepth: 3
+
+   operation/index.rst
+
 
 parametrage
 ===========
@@ -117,8 +108,6 @@ Indices and tables
 * :ref:`search`
 
 * bibliographie
-
-  http://www.cgedd.developpement-durable.gouv.fr/IMG/pdf/007015-01_rapport_cle2e9419.pdf
 
   http://www.openmairie.org/telechargement/openMairie-Guidedudveloppeur.pdf/view
 

@@ -24,6 +24,8 @@ Les principes sont les suivants :
 
 - la gestion des pièces du dossier : arrêtés, notes, photos ...
 
+- la gestion des opérations funéraires
+
 
 Les évolutions de la version 3.0.0
 ==================================
@@ -46,7 +48,7 @@ et dblink (pour les vues sur les bases externes)
 les fonctions 2.0.0 abandonnées
 ===============================
 
-Mysql n'est pas implémentée pour mysql
+openCimetiere n'est pas implémentée pour mysql en version 3.0.0
 
 Il est noté que la version mysql peut être reprise dans une version ultérieure si
 des moyens sont mis en oeuvre par des collectivités.
@@ -71,27 +73,22 @@ table suivant les contraintes d'intégrités ::
 
     Les champs suivants ont été modifiés pourêtre compatible avec le générateur
     
-        table entreprise : cle primaire = entreprsie
+        table entreprise : cle primaire = entreprise
     
         table travaux : cle primaire = travaux et cle secondaire = entreprise
 
 Les cas d'utilisation d'openCimetiere :
-=====================================
+=======================================
 
 
 le Service cimetiere :
 
+.. image:: ../_static/casutilisation.png
 
 
 
-.. image:: ../_static/uml_cas_utilisation.png
-
-
-
-Le diagramme de classe openFoncier
-==================================
-
-<developpeur>
+Le diagramme de classe openCimetiere
+====================================
 
 Le diagramme de classe permet de modéliser les classes et leurs relations
 independamment d'un langage de programmation particulier.
@@ -103,7 +100,7 @@ Le diagramme de classe en montre la structure interne : representation abstraite
 interagir ensemble pour réaliser les cas d utilisation.
 
 
-.. image:: ../_static/uml_classe.png
+.. image:: ../_static/uml_class.png
 
     
     
@@ -118,6 +115,8 @@ Nous vous proposons maintenant d'utiliser openFoncier :
 - saisir les courriers
 
 - télécharger les pièces du dossier de l'emplacement
+
+
     
     
 

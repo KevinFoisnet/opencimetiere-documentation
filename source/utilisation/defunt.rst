@@ -39,10 +39,15 @@ dyn/var.inc ::
     $taille_cercueil = 1
     $taille_urne = 0,1
     $taille_reduction = 0,5
+
+    $tempsreduction = 5; // 5 annees depuis la date d inhumation
     
 C'est sur cette base que se fait le calcul de la taille et la
-calcul de place dans emplecement.
+calcul de place dans emplacement.
 (méthode calcultaille de obj/defunt.class.php)
 
 
+Le paramètrage du formulaire se fait dans dyn/var.inc ::
+
+    $select_titre=array('','Mr','Mme','Melle'); 
 
