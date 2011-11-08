@@ -25,7 +25,9 @@ Il est possible de creer ou modifier un travaux dans le formulaire ci dessous
 
 Il est saisie :
 
-- 
+- entreprise 
+
+- nature de travaux 
 
 
 

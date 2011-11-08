@@ -2,7 +2,7 @@
 
 
 
-Nous vous proposons dans ce chapitre d'utiliser le module opération
+Nous vous proposons dans ce chapitre d'utiliser le parametrage
 
 
 
@@ -11,7 +11,7 @@ Nous vous proposons dans ce chapitre d'utiliser le module opération
 
 .. toctree::
 
-    operation.rst
-    inhumation.rst
-    reduction.rst
-    transfert.rst
+    cimetiere.rst
+    zone.rst
+    voie.rst
+    plans.rst

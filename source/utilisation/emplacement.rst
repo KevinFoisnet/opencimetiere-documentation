@@ -34,7 +34,7 @@ Les emplacements sont listés dans le formulaire suivant
 
 Il est possible de géolocaliser le périmètre du cimetiere :
 
-.. image:: ../_static/sig_cimetiere.png
+.. image:: ../_static/sig_emplacement.png
 
 
 Il est possible de creer ou modifier ou supprimer un emplacement dans le formulaire ci dessous
@@ -71,9 +71,6 @@ Le paramètrage suivant du formulaire se fait dans dyn/var.inc ::
     // croquis actif = 1 non actif =0
     $croquis = 1;
     
-    // sig actif =1 non actif =0
-    $sig=0; // NON IMPLEMENTE A VOIR ... sig externe
-    $siglien="../sig/cimetiere.php";
     
     // *****************************************************************************
     // repertoire des images et dossier par centaine  version 1.11
@@ -106,7 +103,7 @@ Le paramètrage suivant du formulaire se fait dans dyn/var.inc ::
     $option_renouvellementconcession = 1;
 
     /**
-     * SIG externe (Mysql) -> option non diponnible sur pgsql
+     * SIG externe (Mysql)
      *
      /
     // Activer la fonctionnalite lien sig externe

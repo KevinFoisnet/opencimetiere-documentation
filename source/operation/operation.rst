@@ -43,13 +43,5 @@ via l'onglet de l'emplacement est permis
 ATTENTION, CE TRAITEMENT EST DEFINITIF et on ne peut pas retourner en arrière.
 
 Les opérations "traitées" sont visualisables dans l'onglet "opération-trt" de
-l'emplacement.
-
-Elles sont aussi visualisables dans l'option "opération traitées" du menu opération
-
-En appuyant sur l'image pdf, on accéde à la liste des courriers automatiques
-a générer pour l'opération.
-
-Les defunts peuvent etre dans les états suivants :
-
-.. image:: ../_static/etattransitiondefunt.png
+l'emplacement.En appuyant sur l'image pdf, on accéde à la liste des courriers automatiques
+a générer pour l'opération (si elles sont actives).

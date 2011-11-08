@@ -47,7 +47,7 @@ calcul de place dans emplacement.
 (méthode calcultaille de obj/defunt.class.php)
 
 
-Le paramètrage du formulaire se fait dans dyn/var.inc ::
+Le paramètrage du champ titre du formulaire se fait dans dyn/var.inc ::
 
     $select_titre=array('','Mr','Mme','Melle'); 
 

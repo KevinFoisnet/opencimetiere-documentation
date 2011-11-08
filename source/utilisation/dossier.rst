@@ -25,7 +25,7 @@ Il est possible de creer ou modifier un dossier dans le formulaire ci dessous
 
 Il est saisie :
 
-- le fichier a uploader (obligatoire)
+- le fichier à télécharger (obligatoire)
 
 - la date 
 
@@ -52,5 +52,5 @@ Le classement se fait dans un repertoire par centaine de dossier si l'option
 $dossierparcentaine = 1 (conseillé pour éviter d'avoir des milliers de documents
 dans un meme repertoire)
 
-Ce paramètre est en dyn/var.inc
+Ce paramètre est dans le fichier dyn/var.inc
 

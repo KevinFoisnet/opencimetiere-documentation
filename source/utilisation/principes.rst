@@ -24,7 +24,7 @@ Les principes sont les suivants :
 
 - la gestion des pièces du dossier : arrêtés, notes, photos ...
 
-- la gestion des opérations funéraires
+- la gestion des opérations funéraires (voir chapitre sur les operations)
 
 
 Les évolutions de la version 3.0.0
@@ -65,23 +65,23 @@ Pour un transfert de la version 2.0.0 (mysql) vers la version 3.0.0 (postgresql)
 il faut faire une extraction de la base en insérant les data de chaque
 table suivant les contraintes d'intégrités ::
 
-    les tables "filles" doivent être importées avant les tables "mères"
-        exemple : importer nature avant dossier
+    les tables "filles doivent être importées avant les tables "mères"
+        exemple : importer emplacement avant defunt
         
     les lettres types, état, sous états doivent être importés avec le générateur
         voir guide du développeur openMairie
 
-    Les champs suivants ont été modifiés pourêtre compatible avec le générateur
+    Les champs suivants ont été modifiés pour être compatible avec le générateur
     
         table entreprise : cle primaire = entreprise
     
         table travaux : cle primaire = travaux et cle secondaire = entreprise
 
+Voir le script data/pgsql/ver3.0.0.sql
+
 Les cas d'utilisation d'openCimetiere :
 =======================================
 
-
-le Service cimetiere :
 
 .. image:: ../_static/casutilisation.png
 
@@ -104,7 +104,7 @@ interagir ensemble pour réaliser les cas d utilisation.
 
     
     
-Nous vous proposons maintenant d'utiliser openFoncier :
+Nous vous proposons maintenant d'utiliser openCimetiere :
 
 - de créer et localiser un emplacement
 

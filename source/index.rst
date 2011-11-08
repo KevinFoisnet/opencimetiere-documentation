@@ -12,8 +12,7 @@ openMairie 4.1.0
 
 openCimetiere se place dans un contexte de gestion difficile, dans ce secteur d activité considéré comme peu
 stratégique par les decideurs et pourtant combien important pour le service public de proximité.
-openCimetière veut apporter son aide aux professionnels des cimetières dans la gestion des concessions
-et propose :
+openCimetière propose les fonctions suivantes  :
 
 - la gestion de la place (defunt) dans les concessions
 
@@ -29,9 +28,9 @@ et propose :
 
 Avec les nouveaux outils openMairie 4.1.0 (géolocalisation sur carte, tableaux de bord paramétrable)
 viennent compléter les outils déjà paramétrables (requeteur, courrier type, état et sous état), openCimetiere
-est un outil souple et adaptable à toute organisation quelque soit la taille de la collectivité.
+reste un outil souple et adaptable à toute organisation quelque soit la taille de la collectivité.
 
-C'est pourquoi ce document a pour but de guider les développeurs et les utilisateurs
+Ce document a pour but de guider les développeurs et les utilisateurs
 dans la prise en main du projet.
 
 Il est proposé un premier chapitre permettant la prise en main d'openCimetiere.
