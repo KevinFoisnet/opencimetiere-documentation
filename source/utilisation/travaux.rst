@@ -4,11 +4,8 @@
 Saisir des travaux
 ##################
 
-
-
 Il est proposé de décrire dans ce paragraphe la saisie de travaux dans les dossiers
 dans l'onglet "travaux" de l'emplacement.
-
 
 Les travaux  sont listés dans l onglet "travaux"
 
@@ -20,17 +17,11 @@ Il est possible de creer ou modifier un travaux dans le formulaire ci dessous
 .. image:: ../_static/form_travaux.png
 
 
-
-
-
 Il est saisie :
 
 - entreprise 
 
 - nature de travaux 
-
-
-
 
 La nature de travaux  se paramètre dans dyn/var.inc ::
 

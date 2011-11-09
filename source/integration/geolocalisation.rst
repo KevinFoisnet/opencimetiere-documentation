@@ -58,9 +58,6 @@ Elles doivent être déclarées dans dyn/var.inc ::
     1= vue active
     0= vue non active
     
-Attention dans parcelle, la zone parcelle est obligatoire et la zone surface est
-nécessaire pour le calcul de la surface du terrain.
-
 ===========================================
 La mise en place de lien sur un SIG externe
 ===========================================
