@@ -1,8 +1,10 @@
-.. _index:
+.. _integration:
 
+###########
+Intégration
+###########
 
-
-Nous vous proposons dans ce chapître de décrire l'intégration d'openCimetiere dans le système d'information
+Nous vous proposons dans ce chapitre de décrire l'intégration d'openCimetière dans le système d'information
 
 - principes d'une application composite (mashup)
 
@@ -13,7 +15,6 @@ Nous vous proposons dans ce chapître de décrire l'intégration d'openCimetiere
 - les fonds de cartes internet
 
 - le tableau de bord parametrable (widget)
-
 
 
 .. toctree::

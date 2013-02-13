@@ -6,7 +6,7 @@ La recherche globale
 
 
 La recherche globale a pour but de retrouver tous les enregistrements
-d'openCimetiere lié à un nom dans les tables de l application avec :
+d'openCimetière lié à un nom dans les tables de l application avec :
 
 - possibilité d'étendre la recherche sur une partie de mot (recherche élagie cochée)
 

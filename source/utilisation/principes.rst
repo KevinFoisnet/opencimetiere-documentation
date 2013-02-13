@@ -6,7 +6,7 @@ Les principes
 #############
 
 
-openCimetiere a pour but de gérer l'occupation des cimetieres.
+openCimetière a pour but de gérer l'occupation des cimetieres.
 
 Dans la version 3.0.0, il est traité les concessions, les colombariums, les enfeux, les terrains communaux,
 les ossuaires et les dépositoires
@@ -48,7 +48,7 @@ et dblink (pour les vues sur les bases externes)
 les fonctions 2.0.0 abandonnées
 ===============================
 
-openCimetiere n'est pas implémentée pour mysql en version 3.0.0
+openCimetière n'est pas implémentée pour mysql en version 3.0.0
 
 Il est noté que la version mysql peut être reprise dans une version ultérieure si
 des moyens sont mis en oeuvre par des collectivités.
@@ -79,7 +79,7 @@ table suivant les contraintes d'intégrités ::
 
 Voir le script data/pgsql/ver3.0.0.sql
 
-Les cas d'utilisation d'openCimetiere :
+Les cas d'utilisation d'openCimetière :
 =======================================
 
 
@@ -87,7 +87,7 @@ Les cas d'utilisation d'openCimetiere :
 
 
 
-Le diagramme de classe openCimetiere
+Le diagramme de classe openCimetière
 ====================================
 
 Le diagramme de classe permet de modéliser les classes et leurs relations
@@ -104,7 +104,7 @@ interagir ensemble pour réaliser les cas d utilisation.
 
     
     
-Nous vous proposons maintenant d'utiliser openCimetiere :
+Nous vous proposons maintenant d'utiliser openCimetière :
 
 - de créer et localiser un emplacement
 

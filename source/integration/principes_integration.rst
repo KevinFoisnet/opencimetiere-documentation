@@ -4,7 +4,7 @@
 Les principes d'une application composite
 #########################################
 
-openCimetiere permet de construire une application composite en intégrant 
+openCimetière permet de construire une application composite en intégrant 
 des contenus venant d'applications externes.
 
 C'est ainsi que les emplacements peuvent s' afficher sur des fonds de carte internet.
@@ -18,7 +18,7 @@ Les applications composites permettent de construire une application rapidement
 a un faible coût grace à la fusion de multiples services internet. Les composants
 sont facilement ré utilisables
 
-openCimetiere respecte les formats interopérables définies pour les bases de données
+openCimetière respecte les formats interopérables définies pour les bases de données
 par l'OGC.
 
 "L'Open Geospatial Consortium, ou OGC, est un consortium international pour développer
@@ -32,7 +32,7 @@ C'est ainsi que les données peuvent être consultés par tous les outils accept
 formats postgis, wms, wfs, kml, gml, json ... et notament QGIS (outil client lourd).
 
 
-Il est décrit ici les principes d'integration d'openCimetiere dans le domaine
+Il est décrit ici les principes d'integration d'openCimetière dans le domaine
 de l'information géographique.
 
 - la géolocalisation de l'emplacement

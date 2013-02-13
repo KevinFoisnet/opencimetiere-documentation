@@ -5,7 +5,7 @@ les widgets
 ###########
 
 
-openCimetiere permet de construire une application composite en integrant 
+openCimetière permet de construire une application composite en integrant 
 des widgets dans le tableau de bord.
 
 Le mode de fonctionnement des widget est décrit dans le guide du développeur openMairie.

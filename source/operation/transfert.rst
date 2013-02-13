@@ -1,4 +1,4 @@
-.. _inhumation:
+.. _transfert:
 
 ###################
 Saisir un transfert

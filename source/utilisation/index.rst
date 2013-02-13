@@ -1,13 +1,11 @@
-.. _index:
+.. _utilisation:
 
+###########
+Utilisation
+###########
 
-
-Nous vous proposons dans ce chapitre d'utiliser openCimetiere après avoir décrit les
+Nous vous proposons dans ce chapitre d'utiliser openCimetière après avoir décrit les
 principes de l'application.
-
-
-
-
 
 
 .. toctree::

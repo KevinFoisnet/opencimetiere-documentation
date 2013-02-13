@@ -1,18 +1,36 @@
 .. opencimetiere documentation master file, created by
    sphinx-quickstart on Wed Jul 20 17:30:38 2011.
 
-
 =============================
-openCimetiere - Documentation
+openCimetière - Documentation
 =============================
-Créer dans un groupe de l'ADULLACT en 2005, openCimetiere a été en 2006
-élu "projet du mois". Logiciel libre opérationnel depuis des années, la version 3.0.0
-a pour objectif de porter l'application dans un environnement plus moderne :
-openMairie 4.1.0
 
-openCimetiere se place dans un contexte de gestion difficile, dans ce secteur d activité considéré comme peu
-stratégique par les decideurs et pourtant combien important pour le service public de proximité.
-openCimetière propose les fonctions suivantes  :
+Cette création est mise à disposition selon le Contrat Paternité-Partage des
+Conditions Initiales à l'Identique 2.0 France disponible en ligne
+http://creativecommons.org/licenses/by-sa/2.0/fr/ ou par courrier postal à
+Creative Commons, 171 Second Street, Suite 300, San Francisco,
+California 94105, USA.
+
+
+Introduction
+============
+
+Créé dans un groupe de l'ADULLACT en 2005, openCimetière se place dans un
+contexte de gestion difficile, dans ce secteur d'activité considéré comme peu
+stratégique par les décideurs et pourtant combien important pour le service
+public de proximité.
+
+Logiciel libre opérationnel depuis des années, openCimetière a été en septembre
+2006 élu "projet du mois" sur la forge. La version 3.x a pour objectif de porter
+l'application dans un environnement plus moderne (openMairie 4.x) avec de
+nouveaux outils disponibles comme la géolocalisation sur carte ou les tableaux
+de bord paramétrables qui viennent compléter les outils déjà existants comme le
+requêteur, les courriers type ainsi que les état et sous-états.
+
+openCimetière reste un outil souple et adaptable à toute collectivité quelle que
+soit sa taille.
+
+Les principales fonctions de l'application sont les suivantes :
 
 - la gestion de la place (defunt) dans les concessions
 
@@ -26,92 +44,54 @@ openCimetière propose les fonctions suivantes  :
 
 - l'archivage systèmatique de l ensemble des données pour constituer une mémoire commune.
 
-Avec les nouveaux outils openMairie 4.1.0 (géolocalisation sur carte, tableaux de bord paramétrable)
-viennent compléter les outils déjà paramétrables (requeteur, courrier type, état et sous état), openCimetiere
-reste un outil souple et adaptable à toute organisation quelque soit la taille de la collectivité.
-
-Ce document a pour but de guider les développeurs et les utilisateurs
-dans la prise en main du projet.
-
-Il est proposé un premier chapitre permettant la prise en main d'openCimetiere.
-
-Dans un deuxieme chapitre, il est proposé de décrire le paramètrage de l'application
-afin de personnaliser votre application openCimetiere et l'adapter à votre organisation.
-
-Dans un troisième chapitre, il est décrit le fonctionnement des operations funeraires.
-
-Le quatrième chapitre décrit les traitements spécifiques à openCimetiere.
-
-Enfin le cinquiéme chapître est consacré aux principes d'intégration avec
-d'autres applications (SIG, API google, API bing, API osm, application openCourrier)
-afin de constituer des applications composites (mashup).
+Ce document a pour but de guider les développeurs et les utilisateurs dans la
+prise en main du projet.
 
 Bonne lecture et n'hésitez pas à nous faire part de vos remarques à l'adresse
 suivante : contact@openmairie.org !
 
-Cette création est mise à disposition selon le Contrat Paternité-Partage des
-Conditions Initiales à l'Identique 2.0 France disponible en ligne
-http://creativecommons.org/licenses/by-sa/2.0/fr/ ou par courrier postal à
-Creative Commons, 171 Second Street, Suite 300, San Francisco,
-California 94105, USA.
 
-   
-utilisation
-===========
+Table des matières
+==================
+
+Il est proposé un premier chapitre permettant la prise en main d'openCimetière.
+
+Dans un deuxième chapitre, il est proposé de décrire le paramètrage de
+l'application afin de personnaliser votre application openCimetière et de
+l'adapter à votre organisation.
+
+Dans un troisième chapitre, il est décrit le fonctionnement des opérations
+funéraires.
+
+Le quatrième chapitre décrit les traitements spécifiques à openCimetière.
+
+Enfin le cinquiéme chapitre est consacré aux principes d'intégration avec
+d'autres applications (SIG, API google, API bing, API osm, application
+openCourrier) afin de constituer des applications composites (mashup).
+
 
 .. toctree::
    :maxdepth: 3
 
    utilisation/index.rst
-
-operation
-=========
-
-.. toctree::
-   :maxdepth: 3
-
    operation/index.rst
-
-
-parametrage
-===========
-
-.. toctree::
-   :maxdepth: 3
-
    parametrage/index.rst
-
-traitement
-==========
-
-.. toctree::
-   :maxdepth: 3
-
    traitement/index.rst
-   
-integration
-===========
-
-.. toctree::
-   :maxdepth: 3
-
    integration/index.rst
 
 
+Bibliographie
+=============
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
-* bibliographie
-
-  http://www.openmairie.org/telechargement/openMairie-Guidedudveloppeur.pdf/view
+* http://www.openmairie.org/telechargement/openMairie-Guidedudveloppeur.pdf/view
 
 
 Contributeurs
 =============
 
-* `Francois Raynaud <contact@openmairie.org>`_
+(par ordre alphabétique)
+
+* `atReal <contact@atreal.fr>`_
+* `Florent Michon <fmichon@atreal.fr>`_
+* `François Raynaud <contact@openmairie.org>`_
+

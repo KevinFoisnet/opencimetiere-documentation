@@ -1,12 +1,10 @@
-.. _index:
+.. _traitement:
 
-
+##########
+Traitement
+##########
 
 Nous vous proposons dans ce chapitre de mettre en oeuvre les traitements
-
-
-
-
 
 
 .. toctree::
