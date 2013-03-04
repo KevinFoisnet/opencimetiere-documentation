@@ -1,13 +1,11 @@
 .. _defunt:
 
 ################
-Saisir un defunt
+Saisir un défunt
 ################
 
-
-
-Il est proposé de décrire dans ce paragraphe de decrire la saisie des défunts
-dans l'onglet "defunt" de l'emplacement.
+Il est proposé de décrire dans ce paragraphe de décrire la saisie des défunts
+dans l'onglet "défunt" d'un emplacement.
 
 
 .. image:: ../_static/tab_defunt.png

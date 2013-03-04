@@ -1,30 +1,72 @@
 .. _emplacement:
 
-#####################
-Saisir un emplacement
-#####################
+#############
+L'emplacement
+#############
 
 
 
-Il est proposé de décrire dans ce paragraphe de decrire la saisie d un emplacement.
+=====================================
+Les différentes natures d'emplacement
+=====================================
 
-Les emplacements sont de nature suivante :
+concession
+==========
 
-- concession
+Place dans un cimetière. http://fr.wiktionary.org/wiki/concession
 
-- colombarium
 
-- enfeu
+colombarium
+===========
 
-- terrain communal
+=> columbarium
 
-- ossuaire
+Édifice destiné à recevoir des urnes mortuaires dans les cimetières où l’on
+pratique l’incinération. http://fr.wiktionary.org/wiki/columbarium
 
-- depositoire
 
-Diagramme de generalisation :
+enfeu
+=====
 
-.. image:: ../_static/emplacement_classe.png
+Niche dans un édifice religieux abritant un tombeau, un sarcophage ou une scène
+funéraire. http://fr.wiktionary.org/wiki/enfeu
+
+
+terrain communal
+================
+
+=> terrain commun
+
+...
+
+
+ossuaire
+========
+
+Endroit couvert où l’on met des ossements humains.
+http://fr.wiktionary.org/wiki/ossuaire
+
+
+dépositoire
+===========
+
+Nom donné, dans quelques localités, au lieu où l’on dépose les corps des morts,
+avant de les enterrer, et jusqu’à ce que la décomposition putride commence à se
+manifester. http://fr.wiktionary.org/wiki/d%C3%A9positoire
+
+
+================================
+La localisation de l'emplacement
+================================
+
+
+
+
+
+
+======
+Détail
+======
 
 
 Les emplacements sont listés dans le formulaire suivant

@@ -103,6 +103,10 @@ interagir ensemble pour réaliser les cas d utilisation.
 .. image:: ../_static/uml_class.png
 
     
+Diagramme de generalisation :
+
+.. image:: ../_static/emplacement_classe.png
+
     
 Nous vous proposons maintenant d'utiliser openCimetière :
 
