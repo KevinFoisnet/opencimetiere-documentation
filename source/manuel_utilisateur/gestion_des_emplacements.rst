@@ -13,6 +13,5 @@ l'emplacement.
     defunt.rst
     autorisation.rst
     courrier.rst
-    dossier.rst
     travaux.rst
-
+    dossier.rst

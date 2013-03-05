@@ -14,7 +14,7 @@ les ossuaires et les dépositoires
 
 Les principes sont les suivants :
 
-- la gestion des emplacements et la géolocalisation dans un cimetiere sur fond de carte
+- la gestion des emplacements et la géolocalisation dans un cimetière sur fond de carte
 
 - la gestion de la place : les defunts
 

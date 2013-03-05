@@ -1,13 +1,12 @@
 .. _autorisation:
 
-#######################
-Saisir une autorisation
-#######################
-
+###################################################
+Les autorisations (concessionaires et ayants droit)
+###################################################
 
 
 Il est proposé de décrire dans ce paragraphe de decrire la saisie des autorisations
-dans l'onglet "concessionnaire" ou "ayantdraoit" de l'emplacement.
+dans l'onglet "concessionnaire" ou "ayant droit" de l'emplacement.
 
 
 Pour les concessionnaires
@@ -30,15 +29,10 @@ Il est possible de creer ou modifier un ayant droit dans le formulaire ci dessou
 
 
 
-Il est saisie :
+Les informations à saisir sont :
 
-- le nom du concessionnaire ou ayant droit(obligatoire)
-
+- le titre (:ref:`titre_de_civilite`)
+- le nom du concessionnaire ou ayant droit (obligatoire)
 - le prénon
+- le nom d'usage
 
-- le nom marital
-
-
-Le paramètrage du formulaire se fait dans dyn/var.inc ::
-
-    $select_titre=array('','Mr','Mme','Melle'); 

@@ -1,4 +1,4 @@
-.. _geolocalisation:
+.. _parametrage_geolocalisation:
 
 ##################
 La géolocalisation
