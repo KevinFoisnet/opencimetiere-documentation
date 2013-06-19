@@ -1,6 +1,19 @@
+.. _recherche:
+
+#########
+Recherche
+#########
+
+
+La rubrique Recherche permet de recherher des emplacements, des défunts ou
+des autorisations selon différents critères. Ce sont ces différents outils de
+recherche que nous allons décrire ici.
+
+.. image:: opencimetiere--menu-recherche.png
+
+
 .. _recherche_globale:
 
-####################
 La recherche globale
 ####################
 
@@ -17,3 +30,7 @@ d'openCimetière lié à un nom dans les tables de l application avec :
 
 
 .. image:: ../_static/recherche_globale.png
+
+
+
+

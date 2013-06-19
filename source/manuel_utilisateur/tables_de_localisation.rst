@@ -70,19 +70,9 @@ Il est possible de creer ou modifier une zone dans le formulaire ci dessous
 Les informations à saisir sont :
 
 - le cimetière dans lequel se trouve la zone
-- le type de zone
+- le type de zone (:ref:`zone_type`)
 - le libellé de la zone
 
-
-.. admonition:: XXX
-
-    Le type de la zone peut être modifié dans dyn/var.inc ::
-
-        $select_zone=array('CARRE',
-                           'COLLINE',
-                           'ENCLOS',
-                           'EXTENSION',
-                           'SECTION');
 
 .. tip::
 
@@ -120,19 +110,8 @@ Il est possible de creer ou modifier une voie dans le formulaire ci dessous
 Les informations à saisir sont :
 
 - le zone dans laquelle se trouve la voie
-- le type de voie
+- le type de voie (:ref:`voie_type`)
 - le libellé de la voie
-
-.. admonition:: XXX
-
-    Le type de la voie peut être modifié dans dyn/var.inc ::
-
-        $select_voie=array('ALLEE',
-                           'ILOT',
-                           'PLACE',
-                           'PASSAGE',
-                           'RANGEE',
-                           'DIVISION');
 
 
 .. tip::

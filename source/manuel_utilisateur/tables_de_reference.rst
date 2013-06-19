@@ -105,3 +105,22 @@ Cette table est référencée par le(s) élément(s) suivant(s) :
 * :ref:`travaux`.
 
 
+.. _zone_type:
+
+Le type de zone
+===============
+
+...
+
+* :ref:`zone`.
+
+
+.. _voie_type:
+
+Le type de voie
+===============
+
+...
+
+* :ref:`voie`.
+
