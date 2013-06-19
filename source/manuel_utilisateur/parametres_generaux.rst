@@ -50,3 +50,20 @@ Temps obligatoire avant la réduction
 
 "temps_reduction"
 
+
+.. _duree_terraincommunal:
+
+Durée par défaut pour un terrain communal
+-----------------------------------------
+
+"duree_terraincommunal"
+
+
+
+.. _superficie_terraincommunal:
+
+Superficie par défaut pour un terrain communal
+----------------------------------------------
+
+"superficie_terraincommunal"
+

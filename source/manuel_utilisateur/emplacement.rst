@@ -57,6 +57,12 @@ Le terrain communal
 => terrain commun
 
 
+Deux valeurs sont présentes par défaut au chargement du formulaire :
+
+
+- superficie_terraincommunal : valeur par défaut 2 (:ref:`superficie_terraincommunal`)
+- duree_terraincommunal : valeur par défaut 5 (:ref:`duree_terraincommunal`)
+
 
 
 .. _ossuaire:
