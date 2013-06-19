@@ -4,13 +4,30 @@
 Les tables de localisation
 ##########################
 
+La localisation permet de donner une adresse précise à un emplacement. Cette
+localisation est divisée en plusieurs niveaux. D'abord le cimetière qui peut 
+contenir plusieurs zones. Puis chaque zone peut contenir plusieurs voies.
+Enfin dans une voie l'emplacement est identifié par un numéro.
+
+Nous allons décrire dans ce paragraphe comment paramétrer les tables de
+localisation qui composent la localisation d'un emplacement :
+
+* le cimetière,
+* la zone,
+* la voie.
+
+Le paramétrage de ces éléments se fait dans le menu
+(:menuselection:`Paramétrage --> Localisation`).
+
+.. image:: opencimetiere--menu-parametrage-localisation.png
+
 .. _cimetiere:
 
 Le cimetière
 ============
 
 Cet élément est accessible via 
-:menuselection:`Paramétrage --> Localisation --> Cimetière`.
+(:menuselection:`Paramétrage --> Localisation --> Cimetière`).
 
 
 .. image:: ../_static/tab_cimetiere.png
@@ -53,7 +70,7 @@ La zone
 =======
 
 Cet élément est accessible via 
-:menuselection:`Paramétrage --> Localisation --> Zone`.
+(:menuselection:`Paramétrage --> Localisation --> Zone`).
 
 
 .. image:: ../_static/tab_zone.png
@@ -95,7 +112,7 @@ La voie
 =======
 
 Cet élément est accessible via 
-:menuselection:`Paramétrage --> Localisation --> Voie`
+(:menuselection:`Paramétrage --> Localisation --> Voie`).
 
 .. image:: ../_static/tab_voie.png
 

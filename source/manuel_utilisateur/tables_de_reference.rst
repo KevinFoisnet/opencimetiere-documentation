@@ -31,7 +31,7 @@ Cette table est référencée par le(s) élément(s) suivant(s) :
 * :ref:`travaux`.
 
 Cet élément est accessible via 
-:menuselection:`Paramétrage --> Divers --> Entreprise`.
+(:menuselection:`Paramétrage --> Divers --> Entreprise`).
 
 .. image:: ../_static/tab_entreprise.png
 
@@ -59,7 +59,7 @@ Le titre de civilité
 ====================
 
 Cet élément est accessible via 
-:menuselection:`Paramétrage --> Divers --> Titre de civilité`.
+(:menuselection:`Paramétrage --> Divers --> Titre de civilité`).
 
 Le titre de civilité est le plus fréquemment utilisé pour identifier la civilité
 d'une personne (Monsieur, Madame ou Mademoiselle). Il est également utilisé
@@ -77,7 +77,7 @@ Le type de sépulture
 ====================
 
 Cet élément est accessible via 
-:menuselection:`Paramétrage --> Divers --> Type de sépulture`.
+(:menuselection:`Paramétrage --> Divers --> Type de sépulture`).
 
 Le type de sépulture est utilisé pour décrire une concession. Exemples :
 'Fosse maçonnée haute', 'Cavurne', 'Pierre tombale', 'Caveau T2 haut',
@@ -94,7 +94,7 @@ La nature des travaux
 =====================
 
 Cet élément est accessible via 
-:menuselection:`Paramétrage --> Divers --> Nature des travaux`.
+(:menuselection:`Paramétrage --> Divers --> Nature des travaux`).
 
 La nature des travaux est utilisée pour décrire les travaux sur un emplacement.
 Exemples : 'Enlèvement porte', 'Démolition-Reconstruction à l'identique',

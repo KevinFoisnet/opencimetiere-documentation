@@ -18,7 +18,7 @@ La recherche globale
 ####################
 
 Cet élément est accessible via 
-:menuselection:`Recherche --> Recherche globale` ainsi que directement
+(:menuselection:`Recherche --> Recherche globale`) ainsi que directement
 depuis le tableau de bord :ref:`widget_recherche_globale`.
 
 La recherche globale a pour but de retrouver tous les enregistrements
@@ -41,7 +41,7 @@ Concession à terme
 ##################
 
 Cet élément est accessible via 
-:menuselection:`Recherche --> Concession à terme` ainsi que directement
+(:menuselection:`Recherche --> Concession à terme`) ainsi que directement
 depuis le tableau de bord :ref:`widget_concession_a_terme`.
 
 

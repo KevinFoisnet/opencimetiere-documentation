@@ -5,7 +5,7 @@ Paramètres généraux
 ###################
 
 Cet élément est accessible via 
-:menuselection:`Administration --> Paramètre`.
+(:menuselection:`Administration --> Paramètre`).
 
 .. image:: opencimetiere--tableau-parametres.png
 

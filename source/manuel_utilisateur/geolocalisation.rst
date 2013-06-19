@@ -26,7 +26,7 @@ Un emplacement se localise sur un plan grâce à un point.
     comme simple et pratique.
 
 Cet élément est accessible via 
-:menuselection:`Paramétrage --> Localisation --> Plans`.
+(:menuselection:`Paramétrage --> Localisation --> Plans`).
 
 .. image:: ../_static/tab_plans.png
 
