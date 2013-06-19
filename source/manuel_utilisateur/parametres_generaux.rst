@@ -7,6 +7,7 @@ Paramètres généraux
 Cet élément est accessible via 
 :menuselection:`Administration --> Paramètre`.
 
+.. image:: opencimetiere--tableau-parametres.png
 
 .. _option_localisation:
 

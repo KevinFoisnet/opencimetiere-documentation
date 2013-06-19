@@ -17,6 +17,10 @@ cet élément n'est plus sélectionnable comme référence cependant il reste
 sélectionné là où il l'a déjà été.
 
 
+.. image:: opencimetiere--menu-parametrage-divers.png
+
+
+
 .. _entreprise:
 
 L'entreprise

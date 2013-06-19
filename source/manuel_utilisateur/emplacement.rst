@@ -20,62 +20,6 @@ Il faut saisir le lieu :
 
 et la famille.
 
-.. admonition:: XXX
-
-    Le paramètrage suivant du formulaire se fait dans dyn/var.inc ::
-
-        // duree par defaut des terrains communaux
-        $duree_defaut_terraincommunal=5;
-        $superficie_defaut_terraincommunal=2;
-    
-        /**
-         * Types de concessions
-         * $option_typeconcession => 1 signifie que cette option sera activée
-         * $select_typeconcession => 
-         /
-        
-        $select_typeconcession = array ("", "Familiale", "Individuelle", "Collective");
-        
-        /**
-         * Renouvellement de concessions
-         * $option_renouvellementconcession => 1 signifie que cette option sera activée
-         /
-    
-        $option_renouvellementconcession = 1;
-
-        // il est possible de paramétrer 5 zones supplémentaires ::
-        // zones parametrables : concession
-        
-        $temp1_type = "hidden";// text ou hidden
-        $temp1_lib= "zone 1";  // libelle sur le formulaire
-        $temp1_taille=10;      // attention la longueur maxi du champs est de 100 varchar
-        $temp1_max=10;         // attention la longueur maxi du champs est de 100 varchar
-        
-        $temp2_type = "hidden";
-        $temp2_lib= "zone 2";
-        $temp2_taille=20;
-        $temp2_max=20; 
-        
-        $temp3_type = "hidden";
-        $temp3_lib= "zone 3";
-        $temp3_taille=30;
-        $temp3_max=30; 
-        
-        $temp4_type = "hidden";
-        $temp4_lib= "zone 4";
-        $temp4_taille=10;
-        $temp4_max=10;
-        
-        $temp5_type = "hidden";
-        $temp5_lib= "zone 5";
-        $temp5_taille=10;
-        $temp5_max=10; 
-
-
-
-
-
-
 .. _concession:
 
 La concession
@@ -112,7 +56,7 @@ Le terrain communal
 
 => terrain commun
 
-...
+
 
 
 .. _ossuaire:

@@ -34,23 +34,3 @@ Il est saisie :
 - le type de document: photo ou dossier (pdf)
 
 
-Les documents sont conservés dans le repertoire trs/numero_de_collectivité
-
-Ils sont codifiés de la manière suivante ::
-
-    p_numeroemplacement.png pour la première photo
-    p_numeroemplacement_1.png pour la deuxieme photo
-    ...
-    
-    ou
-    
-    d_numeroemplacement.pdf pour le premier dossier
-    d_numeroemplacement_1.pdf pour le deuxieme dossier
-    ...
-
-Le classement se fait dans un repertoire par centaine de dossier si l'option
-$dossierparcentaine = 1 (conseillé pour éviter d'avoir des milliers de documents
-dans un meme repertoire)
-
-Ce paramètre est dans le fichier dyn/var.inc
-
