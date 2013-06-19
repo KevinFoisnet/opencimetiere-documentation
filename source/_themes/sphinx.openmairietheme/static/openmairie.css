@@ -1,0 +1,7 @@
+
+@import url("sphinxdoc.css");
+
+/* On bloque la largeur des images pour ne pas qu'elles dépssent de l'écran */
+img {
+    max-width: 100%;
+}
