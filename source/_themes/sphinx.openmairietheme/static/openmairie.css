@@ -3,5 +3,19 @@
 
 /* On bloque la largeur des images pour ne pas qu'elles dépssent de l'écran */
 img {
-    max-width: 100%;
+    max-width: 450px;
+    border: 5px solid #ffffff;
+    box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
 }
+img:hover {
+    cursor: pointer;
+}
+img:active {
+    max-width: none;
+}
+
+/* */
+em.menuselection {
+    font-weight: bold;
+}
+
