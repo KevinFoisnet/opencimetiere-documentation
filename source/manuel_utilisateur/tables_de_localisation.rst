@@ -30,7 +30,18 @@ Cet élément est accessible via
 (:menuselection:`Paramétrage --> Localisation --> Cimetière`).
 
 
-.. image:: ../_static/tab_cimetiere.png
+.. image:: opencimetiere--tableau-cimetiere.png
+
+
+Depuis ce listing trois éditions sont disponibles :
+
+* |icone-edition-pdf| : listing PDF des cimetières
+* |icone-edition-pdfetat-voie| : ...
+* |icone-edition-pdfetat-voieconcession| : ...
+
+.. |icone-edition-pdf| image:: opencimetiere--icone-edition-pdf.png
+.. |icone-edition-pdfetat-voie| image:: opencimetiere--icone-edition-pdfetat-voie.png
+.. |icone-edition-pdfetat-voieconcession| image:: opencimetiere--icone-edition-pdfetat-voieconcession.png
 
 
 Saisir un cimetière
@@ -73,7 +84,7 @@ Cet élément est accessible via
 (:menuselection:`Paramétrage --> Localisation --> Zone`).
 
 
-.. image:: ../_static/tab_zone.png
+.. image:: opencimetiere--tableau-zone.png
 
 
 Saisir une zone
@@ -114,7 +125,8 @@ La voie
 Cet élément est accessible via 
 (:menuselection:`Paramétrage --> Localisation --> Voie`).
 
-.. image:: ../_static/tab_voie.png
+.. image:: opencimetiere--tableau-voie.png
+
 
 Saisir une voie
 ---------------
