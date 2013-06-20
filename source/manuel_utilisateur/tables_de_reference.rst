@@ -4,12 +4,13 @@
 Les tables de référence
 #######################
 
+
 Une table de référence (ou de codification) permet de limiter volontairement
 les valeurs possibles pour une information saisie. Cela évite que cette valeur
-ne soit décrite de deux manières différentes.
+ne soit décrite de deux manières différentes. Dans cet applicatif, les tables
+de référence sont composées d'un identifiant, d'un libellé et de dates de
+validité.
 
-Dans ce logiciel, les tables de référence sont composées d'un identifiant, d'un
-libellé et de dates de validité.
 
 La date de validité permet de contrôler les éléments qui apparaissent dans les
 listes à choix des formulaires. Si la date de fin de validité est dépassée alors
@@ -17,8 +18,22 @@ cet élément n'est plus sélectionnable comme référence cependant il reste
 sélectionné là où il l'a déjà été.
 
 
-.. image:: opencimetiere--menu-parametrage-divers.png
+Nous allons décrire dans ce paragraphe comment paramétrer les tables de
+référence qui sont utilisés dans les formulaires de l'applicatif :
 
+* :ref:`entreprise`,
+* :ref:`titre_de_civilite`,
+* :ref:`sepulture_type`,
+* :ref:`travaux_nature`,
+* :ref:`zone_type`,
+* :ref:`voie_type`.
+
+
+Le paramétrage de ces éléments se fait dans le menu
+(:menuselection:`Paramétrage --> Divers`).
+
+
+.. image:: opencimetiere--menu-parametrage-divers.png
 
 
 .. _entreprise:
@@ -26,22 +41,12 @@ sélectionné là où il l'a déjà été.
 L'entreprise
 ============
 
-Cette table est référencée par le(s) élément(s) suivant(s) :
-
-* :ref:`travaux`.
-
 Cet élément est accessible via 
 (:menuselection:`Paramétrage --> Divers --> Entreprise`).
 
-.. image:: ../_static/tab_entreprise.png
-
-Saisir une entreprise
----------------------
-
-Il est possible de créer ou modifier une entreprise via le formulaire ci-dessous
-
-.. image:: ../_static/form_entreprise.png
-        
+Une entreprise dans cet applicatif correspond à une entreprise habilité à venir
+effectuer des travaux à l'intérieur du cimetière. Elles sont identifiées par
+leur nom.
 
 Les informations à saisir sont :
 
@@ -51,6 +56,12 @@ Les informations à saisir sont :
 - le code postal
 - la ville
 - le téléphone
+
+
+
+Cette table est référencée par le(s) élément(s) suivant(s) :
+
+* :ref:`travaux`.
 
 
 .. _titre_de_civilite:
@@ -110,7 +121,14 @@ Cette table est référencée par le(s) élément(s) suivant(s) :
 Le type de zone
 ===============
 
-...
+Cet élément est accessible via 
+(:menuselection:`Paramétrage --> Divers --> Type de zone`).
+
+Le type de zone est utilisé pour catégoriser une zone dans le système de
+localisation. Exemples : 'Carré', 'Extension', 'Section', ... Un cimetière
+peut être composé de plusieurs sections ou de plusieurs carrés.
+
+Cette table est référencée par le(s) élément(s) suivant(s) :
 
 * :ref:`zone`.
 
@@ -120,7 +138,14 @@ Le type de zone
 Le type de voie
 ===============
 
-...
+Cet élément est accessible via 
+(:menuselection:`Paramétrage --> Divers --> Type de voie`).
+
+Le type de voie est utilisé pour catégoriser une voie dans le système de
+localisation. Exemples : 'Allée', 'Place', 'Rangée', ... Une zone peut être
+composé de plusieurs allées ou de plusieurs rangées.
+
+Cette table est référencée par le(s) élément(s) suivant(s) :
 
 * :ref:`voie`.
 

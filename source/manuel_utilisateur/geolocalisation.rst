@@ -4,11 +4,19 @@
 La géolocalisation
 ##################
 
-.. warning::
+La géolocalisation est un procédé permettant de positionner un objet (une
+personne, un bâtiment, ...) sur un plan ou une carte à l'aide de ses coordonnées
+géographiques.
 
-    Le paramètre "option_localisation" (:ref:`option_localisation`) doit être
-    positionné correctement pour que les options suivantes soient disponibles.
-  
+Dans cet applicatif, il existe trois possibilités pour géolocaliser les
+emplacements. C'est le paramètre "option_localisation"
+(:ref:`paramétrage général <option_localisation>`) qui doit être positionné
+sur une des options disponibles :
+
+- :ref:`plans`,
+- :ref:`option_sig_interne`,
+- :ref:`option_sig_externe`.
+
 
 .. _plans:
 
@@ -24,6 +32,9 @@ Un emplacement se localise sur un plan grâce à un point.
     l'ancienne version mais il est important de signaler qu'elle ne
     constitue pas un véritable système de géolocalisation même si elle apparait
     comme simple et pratique.
+
+
+
 
 Cet élément est accessible via 
 (:menuselection:`Paramétrage --> Localisation --> Plans`).
@@ -49,10 +60,15 @@ Les informations à saisir sont :
 Option SIG
 ==========
 
+.. _option_sig_interne:
+
 SIG interne
 -----------
 
 A compléter...
+
+
+.. _option_sig_externe:
 
 SIG externe
 -----------

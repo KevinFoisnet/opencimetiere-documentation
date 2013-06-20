@@ -54,3 +54,5 @@ a générer pour l'opération (si elles sont actives).
     inhumation.rst
     reduction.rst
     transfert.rst
+    calcul_place_occupee.rst
+    numdossier.rst

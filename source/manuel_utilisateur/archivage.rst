@@ -1,6 +1,11 @@
 .. _archivage:
 
-#################
+#########
+Archivage
+#########
+
+
+
 Fin de concession
 #################
 
@@ -51,9 +56,9 @@ Il faut saisir ensuite l'ossuaire et la date
 
 ATTENTION, le traitement est irreversible
 
-=======
+
 archive
-=======
+#######
 
 
 Les archives sont consultables dans l'option "archive" du menu

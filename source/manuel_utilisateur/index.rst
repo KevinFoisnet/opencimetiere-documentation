@@ -8,10 +8,11 @@ Manuel de l'utilisateur
 .. toctree::
     :numbered:
 
+    ergonomie.rst
     tableau_de_bord.rst
     gestion_des_emplacements.rst
     recherche.rst
     operation.rst
-    traitement.rst
+    archivage.rst
     parametrage.rst
 

@@ -4,22 +4,27 @@
 Les tables de localisation
 ##########################
 
+
 La localisation permet de donner une adresse précise à un emplacement. Cette
 localisation est divisée en plusieurs niveaux. D'abord le cimetière qui peut 
 contenir plusieurs zones. Puis chaque zone peut contenir plusieurs voies.
 Enfin dans une voie l'emplacement est identifié par un numéro.
 
-Nous allons décrire dans ce paragraphe comment paramétrer les tables de
-localisation qui composent la localisation d'un emplacement :
 
-* le cimetière,
-* la zone,
-* la voie.
+Nous allons décrire dans ce paragraphe comment paramétrer les tables qui
+composent la localisation d'un emplacement :
+
+* :ref:`cimetiere`,
+* :ref:`zone`,
+* :ref:`voie`.
+
 
 Le paramétrage de ces éléments se fait dans le menu
 (:menuselection:`Paramétrage --> Localisation`).
 
+
 .. image:: opencimetiere--menu-parametrage-localisation.png
+
 
 .. _cimetiere:
 
@@ -27,27 +32,17 @@ Le cimetière
 ============
 
 Cet élément est accessible via 
-(:menuselection:`Paramétrage --> Localisation --> Cimetière`).
-
+(:menuselection:`Paramétrage --> Localisation --> Cimetière`). 
 
 .. image:: opencimetiere--tableau-cimetiere.png
 
 
-Depuis ce listing trois éditions sont disponibles :
-
-* |icone-edition-pdf| : listing PDF des cimetières
-* |icone-edition-pdfetat-voie| : ...
-* |icone-edition-pdfetat-voieconcession| : ...
-
-.. |icone-edition-pdf| image:: opencimetiere--icone-edition-pdf.png
-.. |icone-edition-pdfetat-voie| image:: opencimetiere--icone-edition-pdfetat-voie.png
-.. |icone-edition-pdfetat-voieconcession| image:: opencimetiere--icone-edition-pdfetat-voieconcession.png
-
+.. _saisir_cimetiere:
 
 Saisir un cimetière
 -------------------
 
-Il est possible de créer ou modifier un cimetière dans le formulaire ci dessous
+Le formulaire est identique en mode ajout et modification.
 
 .. image:: ../_static/form_cimetiere.png
 
@@ -60,15 +55,20 @@ Les informations à saisir sont :
 - la ville
 - des observations
 
+.. tip::
 
-Modifier un cimetière
----------------------
+    Il est possible de saisir une zone depuis l'onglet zone du formulaire d'un
+    cimetière. Cela permet d'éviter d'avoir à sélectionner le cimetière concerné
+    à chaque ajout de zone.
 
-Toutes les informations du cimetière sauf son identifiant sont modifiables.
+Localiser un cimetière (option SIG interne)
+-------------------------------------------
 
+|icone-localiser|
 
-Localiser un cimetière (option SIG)
------------------------------------
+Cette action n'est disponible que si le paramètre "option_localisation"
+(:ref:`paramétrage général <option_localisation>`) est positionné sur
+"sig_interne".
 
 Il est possible de géolocaliser le périmètre du cimetière :
 
@@ -101,6 +101,11 @@ Les informations à saisir sont :
 - le type de zone (:ref:`zone_type`)
 - le libellé de la zone
 
+.. tip::
+
+    Il est possible de saisir une voie depuis l'onglet voie du formulaire d'une
+    zone. Cela permet d'éviter d'avoir à sélectionner la zone concernée à chaque
+    ajout de voie.
 
 .. tip::
 
@@ -109,8 +114,14 @@ Les informations à saisir sont :
     à chaque ajout de zone.
 
 
-Localiser une zone (option SIG)
--------------------------------
+Localiser une zone (option SIG interne)
+---------------------------------------
+
+|icone-localiser|
+
+Cette action n'est disponible que si le paramètre "option_localisation"
+(:ref:`paramétrage général <option_localisation>`) est positionné sur
+"sig_interne".
 
 Il est possible de géolocaliser le périmètre d'une zone :
 
@@ -126,6 +137,24 @@ Cet élément est accessible via
 (:menuselection:`Paramétrage --> Localisation --> Voie`).
 
 .. image:: opencimetiere--tableau-voie.png
+
+
+
+Imprimer un état de la voie
+---------------------------
+
+|icone-edition-pdfetat-voie|
+
+.. |icone-edition-pdfetat-voie| image:: opencimetiere--icone-edition-pdfetat-voie.png
+
+
+Imprimer un état de la voie par concession
+------------------------------------------
+
+|icone-edition-pdfetat-voieconcession|
+
+.. |icone-edition-pdfetat-voieconcession| image:: opencimetiere--icone-edition-pdfetat-voieconcession.png
+
 
 
 Saisir une voie
@@ -150,10 +179,20 @@ Les informations à saisir sont :
     ajout de voie.
 
 
-Localiser une voie (option SIG)
--------------------------------
+Localiser une voie (option SIG interne)
+---------------------------------------
+
+|icone-localiser|
+
+Cette action n'est disponible que si le paramètre "option_localisation"
+(:ref:`paramétrage général <option_localisation>`) est positionné sur
+"sig_interne".
 
 Il est possible de géolocaliser la ligne d'une voie :
 
 .. image:: ../_static/sig_voie.png
+
+
+.. |icone-localiser| image:: opencimetiere--icone-localiser.png
+
 

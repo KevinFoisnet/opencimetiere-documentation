@@ -7,63 +7,55 @@ Paramètres généraux
 Cet élément est accessible via 
 (:menuselection:`Administration --> Paramètre`).
 
+C'est le listing de tous les paramètres généraux utilisés à divers endroits de
+l'applicatif.
+
 .. image:: opencimetiere--tableau-parametres.png
 
-.. _option_localisation:
+Voici le descriptif des paramètres :
 
-Système de géolocalisation
---------------------------
+.. list-table:: 
+   :widths: 20 80
+   :header-rows: 1
+  
+   * - paramètre
+     - description
 
-"option_localisation" :
+   * - .. _option_localisation:
+       
+       "option_localisation"
+     - Système de géolocalisation. Les valeurs possibles sont :
+     
+       - plan,
+       - sig_interne,
+       - sig_externe.
 
-- plan
-- sig_interne
-- sig_externe
+   * - .. _taille_cercueil:
+       
+       "taille_cercueil"
+     - Taille d'un cercueil. Par défaut la valeur est égale à 5.
 
+   * - .. _taille_urne:
 
-.. _taille_cercueil:
+       "taille_urne"
+     - Taille d'une urne.
 
-Taille d'un cercueil
---------------------
+   * - .. _taille_reduction:
+   
+       "taille_reduction"
+     - Taille de la réduction.
 
-"taille_cercueil"
+   * - .. _temps_reduction:
 
-.. _taille_reduction:
+       "temps_reduction"
+     - Temps obligatoire avant la réduction.
 
-Taille de la réduction
-----------------------
+   * - .. _duree_terraincommunal:
 
-"taille_reduction"
+       "duree_terraincommunal"
+     - Durée par défaut pour un terrain communal.
 
-.. _taille_urne:
+   * - .. _superficie_terraincommunal:
 
-Taille d'une urne
------------------
-
-"taille_urne"
-
-
-.. _temps_reduction:
-
-Temps obligatoire avant la réduction
-------------------------------------
-
-"temps_reduction"
-
-
-.. _duree_terraincommunal:
-
-Durée par défaut pour un terrain communal
------------------------------------------
-
-"duree_terraincommunal"
-
-
-
-.. _superficie_terraincommunal:
-
-Superficie par défaut pour un terrain communal
-----------------------------------------------
-
-"superficie_terraincommunal"
-
+       "superficie_terraincommunal"
+     - Superficie par défaut pour un terrain communal.

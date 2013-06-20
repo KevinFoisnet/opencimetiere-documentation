@@ -60,8 +60,8 @@ Le terrain communal
 Deux valeurs sont présentes par défaut au chargement du formulaire :
 
 
-- superficie_terraincommunal : valeur par défaut 2 (:ref:`superficie_terraincommunal`)
-- duree_terraincommunal : valeur par défaut 5 (:ref:`duree_terraincommunal`)
+- superficie_terraincommunal : valeur par défaut 2 (:ref:`paramétrage général <superficie_terraincommunal>`)
+- duree_terraincommunal : valeur par défaut 5 (:ref:`paramétrage général <duree_terraincommunal>`)
 
 
 

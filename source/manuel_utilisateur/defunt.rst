@@ -36,10 +36,10 @@ Calcul de l'occupation
 
 Le calcul de la taille d'occupation se fait à partir des paramères suivants :
 
-- taille_cercueil : valeur par défaut 1 (:ref:`taille_cercueil`)
-- taille_urne : valeur par défaut 0,1 (:ref:`taille_urne`)
-- taille_reduction : valeur par défaut 0,5 (:ref:`taille_reduction`)
-- temps_reduction : valeur par défaut 5 (:ref:`temps_reduction`)
+- taille_cercueil : valeur par défaut 1 (:ref:`paramétrage général <taille_cercueil>`)
+- taille_urne : valeur par défaut 0,1 (:ref:`paramétrage général <taille_urne>`)
+- taille_reduction : valeur par défaut 0,5 (:ref:`paramétrage général <taille_reduction>`)
+- temps_reduction : valeur par défaut 5 (:ref:`paramétrage général <temps_reduction>`)
     
 C'est sur cette base que se fait le calcul de la taille et le calcul de place
 dans l'emplacement.

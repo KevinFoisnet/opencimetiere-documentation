@@ -30,7 +30,7 @@ d'openCimetière lié à un nom dans les tables de l application avec :
 
 - possibilité de restreindre la recherche a un champ
 
-
+XXX Détailler la recherche globale
 
 .. image:: ../_static/recherche_globale.png
 
@@ -50,7 +50,8 @@ depuis le tableau de bord :ref:`widget_concession_a_terme`.
 Concession libre
 ################
 
-
+Cet élément est accessible via 
+(:menuselection:`Recherche --> Concession libre`).
 
 
 .. _colombarium_libre:
@@ -58,7 +59,8 @@ Concession libre
 Colombarium libre
 #################
 
-
+Cet élément est accessible via 
+(:menuselection:`Recherche --> Colombarium libre`).
 
 
 .. _terraincommunal_libre:
@@ -66,4 +68,6 @@ Colombarium libre
 Terrain Communal libre
 ######################
 
+Cet élément est accessible via 
+(:menuselection:`Recherche --> Terrain Communal libre`).
 
