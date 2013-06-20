@@ -39,7 +39,7 @@ Un emplacement se localise sur un plan grâce à un point.
 Cet élément est accessible via 
 (:menuselection:`Paramétrage --> Localisation --> Plans`).
 
-.. image:: ../_static/tab_plans.png
+.. image:: opencimetiere--tableau-plans.png
 
 
 Saisir un plan
@@ -47,12 +47,31 @@ Saisir un plan
 
 Il est possible de créer ou modifier un plan dans le formulaire ci-dessous :
 
-.. image:: ../_static/form_plans.png
+.. image:: opencimetiere--formulaire-modifier-plans.png
 
 Les informations à saisir sont :
 
 - le fichier à télécharger
 - le libéllé du plan
+
+
+Visualiser un plan
+------------------
+
+|icone-localiser|
+
+Cette action permet de visualiser le plan avec tous les emplacements
+positionnés sur ce dernier. Au survol d'un emplacement, le nom de famille de
+l'emplacement apparaît et en cliquant sur le point on accède à la fiche de
+l'emplacement en visualisation.
+
+.. image:: opencimetiere--geolocalisation-plan-visualiser.png
+
+Code couleur des points :
+
+* Un point jaune représente un emplacement temporaire.
+* Un point vert représente un emplacement libre.
+* Un point rouge représente un emplacement à perpétuité.
 
 
 .. _option_sig:
@@ -75,3 +94,5 @@ SIG externe
 
 A compléter...
 
+
+.. |icone-localiser| image:: opencimetiere--icone-localiser.png

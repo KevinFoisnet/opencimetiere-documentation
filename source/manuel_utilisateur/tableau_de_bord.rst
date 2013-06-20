@@ -41,7 +41,14 @@ le contenu de ce widget.
 Option Plan
 ===========
 
-XXX Détailler le widget localisation plan
+Si aucun plan n'est configuré alors le widget affiche un message prévenant
+l'utilisateur qu'aucun plan n'est configuré.
+
+Si au moins un plan est configuré alors ce widget affiche la liste des plans
+avec un lien vers l'action "Visualiser un plan" (Voir :ref:`plans`).
+
+
+.. image:: opencimetiere--widget-localisation-plan.png
 
 
 Option SIG
@@ -70,7 +77,8 @@ option qui est activée.
 Le widget Supervision
 #####################
 
-XXX Détailler le widget Supervision
+L'objectif de ce widget est de présenter le nombre d'emplacements par type et
+par cimetière dans l'applicatif.
 
 
 .. _widget_concession_a_terme:
