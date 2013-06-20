@@ -44,7 +44,7 @@ Saisir un cimetière
 
 Le formulaire est identique en mode ajout et modification.
 
-.. image:: ../_static/form_cimetiere.png
+.. image:: opencimetiere--formulaire-modifier-cimetiere.png
 
 
 Les informations à saisir sont :
@@ -90,9 +90,9 @@ Cet élément est accessible via
 Saisir une zone
 ---------------
 
-Il est possible de creer ou modifier une zone dans le formulaire ci dessous
+Le formulaire est identique en mode ajout et modification.
 
-.. image:: ../_static/form_zone.png
+.. image:: opencimetiere--formulaire-modifier-zone.png
 
 
 Les informations à saisir sont :
@@ -160,9 +160,9 @@ Imprimer un état de la voie par concession
 Saisir une voie
 ---------------
 
-Il est possible de creer ou modifier une voie dans le formulaire ci dessous
+Le formulaire est identique en mode ajout et modification.
 
-.. image:: ../_static/form_voie.png
+.. image:: opencimetiere--formulaire-modifier-voie.png
 
 
 Les informations à saisir sont :

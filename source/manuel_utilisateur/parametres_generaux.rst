@@ -59,3 +59,7 @@ Voici le descriptif des paramètres :
 
        "superficie_terraincommunal"
      - Superficie par défaut pour un terrain communal.
+
+
+Il existe d'autres paramètres dont les noms significatifs permettent de savoir
+de quoi il s'agit.
