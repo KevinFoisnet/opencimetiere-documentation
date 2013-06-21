@@ -34,9 +34,8 @@ Navigateur Web
 L'application est accessible via un navigateur Web, pour y accéder il faut
 saisir l'adresse Web fournie par votre administrateur dans la barre d'adresse.
 
-.. figure:: opencimetiere--ergonomie-navigateur.png
+.. image:: opencimetiere--ergonomie-navigateur.png
 
-    Saisie d'adresse dans un navigateur Web
 
 .. note::
 
@@ -50,12 +49,10 @@ Saisie des informations de connexion
 
 Cet écran de connexion est composé de deux zones de texte et d'un bouton.
 
-.. figure:: opencimetiere--ergonomie-formulaire-connexion.png
+.. image:: opencimetiere--ergonomie-formulaire-connexion.png
 
-    Formulaire de connexion
-
-La figure 2 présente l'écran d'identification, il faut saisir son identifiant et
-son mot de passe puis cliquer sur le bouton « Se connecter ».
+Dans l'écran d'identification, il faut saisir son identifiant et son mot de
+passe puis cliquer sur le bouton « Se connecter ».
 
 .. note::
 
@@ -69,9 +66,7 @@ Connexion échouée
 Si les identifiants saisis sont incorrects, un message d'erreur apparaît et il
 faut ressaisir les informations de connexion.
 
-.. figure:: opencimetiere--ergonomie-connexion-message-erreur.png
-
-    Message de connexion échouée
+.. image:: opencimetiere--ergonomie-connexion-message-erreur.png
 
 
 Connexion réussie
@@ -80,9 +75,7 @@ Connexion réussie
 Si les identifiants sont corrects, vous êtes redirigé vers la page demandée sur
 laquelle le message suivant doit d'afficher.
 
-.. figure:: opencimetiere--ergonomie-connexion-message-ok.png
-    
-    Message de connexion réussie
+.. image:: opencimetiere--ergonomie-connexion-message-ok.png
 
 
 
@@ -97,16 +90,14 @@ via votre compte utilisateur.
 L'action "Déconnexion" est disponible à tout moment dans les actions
 personnelles en haut à droite de l'écran.
 
-.. figure:: opencimetiere--ergonomie-deconnexion-action.png
+.. image:: opencimetiere--ergonomie-deconnexion-action.png
 
-   Action "Déconnexion" dans la barre d'actions personnelles
 
 Une fois déconnecté, c'est le formulaire de donnexion qui s'affiche avec un
 message expliquant la réussite de la déconnexion.
 
-.. figure:: opencimetiere--ergonomie-deconnexion-message-ok.png
-    
-    Message de déconnexion réussie
+.. image:: opencimetiere--ergonomie-deconnexion-message-ok.png
+
 
 
 
@@ -144,9 +135,7 @@ et l'objectif de chacun de ces composants. Cette structuration de l'application
 permet donc à l’utilisateur de toujours trouver les outils au même endroit
 et de se repérer rapidement.
 
-.. figure:: opencimetiere--ergonomie-generale-detail.png
-    
-    Ergonomie générale
+.. image:: opencimetiere--ergonomie-generale-detail.png
 
 .. note::
 
@@ -224,9 +213,8 @@ Les listings
 Un listing est un tableau qui liste des éléments récapitulant des informations
 permettant d'identifier un élément parmi les autres.
 
-.. figure:: opencimetiere--ergonomie-listing.png
-    
-    Exemple d'un listing
+.. image:: opencimetiere--ergonomie-listing.png
+
 
 ===========
 Les actions
@@ -289,14 +277,16 @@ Un formulaire dans cet applicatif peut soit être de visualisation soit d'action
 contient un portlet d'actions contextuelles et que le deuxième contient un
 bouton qui permet de valider le formulaire en question.
 
-.. figure:: opencimetiere--ergonomie-formulaire-visualiser.png
-    
-    Exemple d'un formulaire en mode visualisation
+Voici l'exemple d'un formulaire en mode visualisation.
 
-
-.. figure:: opencimetiere--ergonomie-formulaire-modifier.png
+.. image:: opencimetiere--ergonomie-formulaire-visualiser.png
     
-    Exemple d'un formulaire en mode modification
+
+Voici l'exemple d'un formulaire en mode modification.
+
+.. image:: opencimetiere--ergonomie-formulaire-modifier.png
+    
+
 
 ===========
 Les actions
@@ -340,10 +330,7 @@ listing de ces éléments liés avec des actions qui permettent également d'acc
 Par exemple sur l'image suivante, on peut voir sur le "profil" un onglet
 "tableau de bord" qui liste les tableaux de bord liés au profil utilisateur.
 
-.. figure:: opencimetiere--ergonomie-formulaire-onglet-listing.png
-    
-    Exemple d'un onglet sur un formulaire
-
+.. image:: opencimetiere--ergonomie-formulaire-onglet-listing.png
 
 
 .. |icone-edition-pdf| image:: opencimetiere--icone-edition-pdf.png
