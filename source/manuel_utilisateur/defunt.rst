@@ -4,18 +4,20 @@
 Les défunts
 ###########
 
-Il est proposé de décrire dans ce paragraphe de décrire la saisie des défunts
-dans l'onglet "défunt" d'un emplacement.
+Il est proposé de décrire dans ce paragraphela saisie des défunts dans l'onglet
+"défunt" d'un emplacement.
 
+On accède à cet élément depuis l'onglet "Défunt" de l'emplacement.
+Tous les courriers liés à l'emplacement sont listés dans cet onglet.
 
-.. image:: ../_static/tab_defunt.png
+.. image:: opencimetiere--onglet-defunt-tableau.png
 
 Saisir un défunt
 ----------------
 
-Il est possible de créer ou modifier un défunt dans le formulaire ci dessous :
+Le formulaire est identique en mode ajout et modification.
 
-.. image:: ../_static/form_defunt.png
+.. image:: opencimetiere--onglet-defunt-formulaire.png
 
 
 Les informations à saisir sont :
