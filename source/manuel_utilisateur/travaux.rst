@@ -4,15 +4,16 @@
 Les travaux
 ###########
 
-Les travaux  sont listés dans l onglet "travaux"
 
-.. image:: ../_static/tab_travaux.png
+On accède à cet élément depuis l'onglet "Courrier" de l'emplacement.
+Tous les courriers liés à l'emplacement sont listés dans cet onglet.
+
+.. image:: opencimetiere--onglet-travaux-tableau.png
 
 
-Il est possible de creer ou modifier un travaux dans le formulaire ci dessous
+Le formulaire est identique en mode ajout et modification.
 
-.. image:: ../_static/form_travaux.png
-
+.. image:: opencimetiere--onglet-travaux-formulaire.png
 
 
 Les informations à saisir sont : 
@@ -23,4 +24,3 @@ Les informations à saisir sont :
 - la nature du demandeur : ("concesionnaire", "ayant droit" ou "autre")
 - la nature des travaux (:ref:`travaux_nature`)
 
-    
