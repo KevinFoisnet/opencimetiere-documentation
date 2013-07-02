@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# openfoncier documentation build configuration file, created by
+# opencimetiere documentation build configuration file, created by
 # sphinx-quickstart on Wed Jul 20 17:30:38 2011.
 #
 # This file is execfile()d with the current directory set to its containing dir.
@@ -34,7 +34,7 @@ templates_path = ['_templates']
 source_suffix = '.rst'
 
 # The encoding of source files.
-#source_encoding = 'utf-8-sig'
+#source_encoding = 'utf-8'
 
 # The master toctree document.
 master_doc = 'index'
@@ -60,7 +60,7 @@ language = 'fr'
 # non-false value, then it is used:
 #today = ''
 # Else, today_fmt is used as the format for a strftime call.
-#today_fmt = '%B %d, %Y'
+today_fmt = '%d %m %Y'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -171,7 +171,7 @@ htmlhelp_basename = 'opencimetieredoc'
 # -- Options for LaTeX output --------------------------------------------------
 
 # The paper size ('letter' or 'a4').
-#latex_paper_size = 'letter'
+latex_paper_size = 'a4'
 
 # The font size ('10pt', '11pt' or '12pt').
 #latex_font_size = '10pt'
