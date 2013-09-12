@@ -48,7 +48,7 @@ copyright = u'2013, openMairie'
 # built documents.
 #
 # The short X.Y version.
-version = 'trunk'
+version = '3.0'
 # The full version, including alpha/beta/rc tags.
 release = '3.0 ()[]'
 
