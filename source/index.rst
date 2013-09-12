@@ -2,7 +2,7 @@
    sphinx-quickstart on Wed Jul 20 17:30:38 2011.
 
 ===============================
-openCimetière 3.x documentation
+openCimetière 3.0 documentation
 ===============================
 
 .. note::
