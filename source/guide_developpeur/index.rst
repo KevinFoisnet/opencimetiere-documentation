@@ -9,4 +9,5 @@ Guide du développeur
 
     principes.rst
     integration.rst
+    migration_mysql.rst
 
