@@ -54,31 +54,6 @@ Il est noté que la version mysql peut être reprise dans une version ultérieur
 des moyens sont mis en oeuvre par des collectivités.
 
 
-La récupération de données pour postgresql
-==========================================
-
-Dans le cadre d'un transfert d'une autre application, il est conseillé d'utiliser
-l'option import du menu administrateur (voir guide du développeur openMairie) et de faire
-un import en CSV.
-
-Pour un transfert de la version 2.0.0 (mysql) vers la version 3.0.0 (postgresql)
-il faut faire une extraction de la base en insérant les data de chaque
-table suivant les contraintes d'intégrités ::
-
-    les tables "filles doivent être importées avant les tables "mères"
-        exemple : importer emplacement avant defunt
-        
-    les lettres types, état, sous états doivent être importés avec le générateur
-        voir guide du développeur openMairie
-
-    Les champs suivants ont été modifiés pour être compatible avec le générateur
-    
-        table entreprise : cle primaire = entreprise
-    
-        table travaux : cle primaire = travaux et cle secondaire = entreprise
-
-Voir le script data/pgsql/ver3.0.0.sql
-
 Les cas d'utilisation d'openCimetière :
 =======================================
 
