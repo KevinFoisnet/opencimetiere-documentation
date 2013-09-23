@@ -14,13 +14,12 @@ Nous vous proposons dans ce chapitre de décrire l'intégration d'openCimetière
 
 - les fonds de cartes internet
 
-- le tableau de bord parametrable (widget)
 
 
 .. toctree::
 
     principes_integration.rst
     geolocalisation.rst
-    widget.rst
+
     
 

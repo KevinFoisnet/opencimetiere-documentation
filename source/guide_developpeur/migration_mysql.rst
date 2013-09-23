@@ -42,170 +42,49 @@ script de création ::
     SET search_path = opencimetiere_temp, public, pg_catalog;
     
     -- localisation    
-    CREATE TABLE zone (
-      zone integer,
-      cimetiere integer ,
-      zonetype varchar(30),
-      zonelib varchar(40) 
-    );
-    CREATE TABLE voie (
-      voie integer ,
-      zone integer,
-      voietype varchar(30),
-      voielib varchar(40)
-    ) ;
+    CREATE TABLE zone (zone integer, cimetiere integer , zonetype varchar(30),zonelib varchar(40) );
+    CREATE TABLE voie (voie integer , zone integer, voietype varchar(30), voielib varchar(40) ) ;
     -- emplacement
-    CREATE TABLE emplacement (
-      emplacement integer,
-      nature varchar(20),
-      numero integer,
-      complement varchar(6) ,
-      voie integer,
-      numerocadastre varchar(15) ,
-      famille varchar(40) ,
-      numeroacte varchar(15) ,
-      datevente varchar(10),
-      terme varchar(15) ,
-      duree integer,
-      dateterme varchar(10),
-      nombreplace numeric ,
-      placeoccupe numeric,
-      superficie numeric,
-      placeconstat numeric,
-      dateconstat varchar(10),
-      observation text ,
-      plans varchar(30) ,
-      positionx integer ,
-      positiony integer,
-      photo varchar(20) ,
-      libre char(3) ,
-      sepulturetype varchar(30) ,
-      temp1 varchar(100),
-      temp2 varchar(100),
-      temp3 varchar(100),
-      temp4 varchar(100),
-      temp5 varchar(100)
-    );
-    CREATE TABLE defunt (
-      defunt integer,
-      nature varchar(15),
-      taille real,
-      emplacement integer,
-      titre varchar(4),
-      nom varchar(40),
-      prenom varchar(40),
-      marital varchar(40),
-      datenaissance varchar(10),
-      datedeces varchar(10),
-      lieudeces varchar(40),
-      dateinhumation varchar(10),
-      exhumation char(3),
-      dateexhumation varchar(10),
-      observation text,
-      reduction char(3),
-      datereduction varchar(10),
-      historique text
-    );
-    CREATE TABLE autorisation (
-      autorisation integer,
-      emplacement integer,
-      nature varchar(15) ,
-      titre varchar(4) ,
-      nom varchar(40) ,
-      marital varchar(40) ,
-      prenom varchar(40) ,
-      datenaissance varchar(10),
-      adresse1 varchar(40) ,
-      adresse2 varchar(40) ,
-      cp varchar(5) ,
-      ville varchar(40) ,
-      telephone varchar(15) ,
-      dcd char(3) ,
-      parente varchar(15) ,
-      observation text
-    ) ;
-    CREATE TABLE dossier (
-      dossier integer,
-      emplacement integer,
-      fichier varchar(40),
-      datedossier varchar(10),
-      observation text,
-      typedossier varchar(20)
-    );
-    CREATE TABLE travaux (
-      idtravaux integer,
-      idintervenant integer,
-      emplacement integer,
-      datedebinter date,
-      datefininter date ,
-      observation text ,
-      naturedemandeur varchar(20),
-      naturetravaux varchar(40) ,
-    );
-    CREATE TABLE emplacement_archive (
-      emplacement integer,
-      nature varchar(20),
-      numero integer,
-      complement varchar(6),
-      voie integer,
-      numerocadastre varchar(15),
-      famille varchar(40),
-      numeroacte varchar(15),
-      datevente varchar(10),
-      terme varchar(20),
-      duree integer,
-      dateterme varchar(10),
-      nombreplace real,
-      placeoccupe real,
-      superficie real,
-      placeconstat real,
-      dateconstat varchar(10),
-      observation text,
-      plans varchar(30),
-      positionx integer,
-      positiony integer,
-      photo varchar(20),
-      libre char(3),
-      sepulturetype varchar(30)
-    );
-    CREATE TABLE defunt_archive (
-      defunt integer,
-      nature varchar(15),
-      taille real,
-      emplacement integer,
-      titre varchar(4),
-      nom varchar(40),
-      prenom varchar(40),
-      marital varchar(40),
-      datenaissance varchar(10),
-      datedeces varchar(10),
-      lieudeces varchar(40),
-      dateinhumation varchar(10),
-      exhumation char(3),
-      dateexhumation varchar(10),
-      observation text,
-      reduction char(3),
-      datereduction varchar(10),
-      historique text 
-    );
-    CREATE TABLE autorisation_archive (
-      autorisation integer,
-      emplacement integer,
-      nature varchar(15),
-      titre varchar(4) ,
-      nom varchar(40) ,
-      marital varchar(40) ,
-      prenom varchar(40) ,
-      datenaissance varchar(10),
-      adresse1 varchar(40) ,
-      adresse2 varchar(40) ,
-      cp varchar(5) ,
-      ville varchar(40) ,
-      telephone varchar(15) ,
-      dcd char(3) ,
-      parente varchar(15) ,
-      observation text 
-    );
+    CREATE TABLE emplacement ( emplacement integer, nature varchar(20), numero integer,
+      complement varchar(6) , voie integer, numerocadastre varchar(15) , famille varchar(40) ,
+      numeroacte varchar(15) , datevente varchar(10), terme varchar(15) , duree integer,
+      dateterme varchar(10), nombreplace numeric , placeoccupe numeric, superficie numeric,
+      placeconstat numeric, dateconstat varchar(10), observation text ,
+      plans varchar(30) ,  positionx integer ,  positiony integer, photo varchar(20) ,
+      libre char(3) , sepulturetype varchar(30) , temp1 varchar(100), temp2 varchar(100),
+      temp3 varchar(100), temp4 varchar(100), temp5 varchar(100) );
+    CREATE TABLE defunt ( defunt integer, nature varchar(15), taille real, emplacement integer,
+      titre varchar(4), nom varchar(40), prenom varchar(40), marital varchar(40),
+      datenaissance varchar(10), datedeces varchar(10), lieudeces varchar(40),
+      dateinhumation varchar(10), exhumation char(3), dateexhumation varchar(10),
+      observation text, reduction char(3), datereduction varchar(10), historique text);
+    CREATE TABLE autorisation ( autorisation integer, emplacement integer, nature varchar(15) ,
+      titre varchar(4) , nom varchar(40) , marital varchar(40) , prenom varchar(40) ,
+      datenaissance varchar(10), adresse1 varchar(40) , adresse2 varchar(40) , cp varchar(5) ,
+      ville varchar(40) , telephone varchar(15) , dcd char(3) , parente varchar(15) ,
+      observation text) ;
+    CREATE TABLE dossier ( dossier integer, emplacement integer, fichier varchar(40),
+      datedossier varchar(10), observation text, typedossier varchar(20) );
+    CREATE TABLE travaux ( idtravaux integer, idintervenant integer, emplacement integer,
+      datedebinter date, datefininter date , observation text , naturedemandeur varchar(20),
+      naturetravaux varchar(40));
+    CREATE TABLE emplacement_archive (emplacement integer, nature varchar(20), numero integer,
+      complement varchar(6), voie integer, numerocadastre varchar(15), famille varchar(40),
+      numeroacte varchar(15), datevente varchar(10), terme varchar(20), duree integer,
+      dateterme varchar(10), nombreplace real, placeoccupe real, superficie real,
+      placeconstat real, dateconstat varchar(10), observation text, plans varchar(30),
+      positionx integer, positiony integer, photo varchar(20), libre char(3),
+      sepulturetype varchar(30));
+    CREATE TABLE defunt_archive (defunt integer, nature varchar(15), taille real,
+      emplacement integer, titre varchar(4), nom varchar(40), prenom varchar(40),
+      marital varchar(40), datenaissance varchar(10), datedeces varchar(10), lieudeces varchar(40),
+      dateinhumation varchar(10), exhumation char(3),dateexhumation varchar(10), observation text,
+      reduction char(3), datereduction varchar(10), historique text );
+    CREATE TABLE autorisation_archive (autorisation integer, emplacement integer, nature varchar(15),
+      titre varchar(4) , nom varchar(40) , marital varchar(40) , prenom varchar(40) ,
+      datenaissance varchar(10), adresse1 varchar(40) , adresse2 varchar(40) ,
+      cp varchar(5) , ville varchar(40) , telephone varchar(15) ,
+      dcd char(3) , parente varchar(15) , observation text );
 
 Transfert des données de localisation
 =====================================
@@ -252,7 +131,8 @@ et email (peut être égal à '')
 Attention, om_profil est inversé 5=1 , 4=2 ...1=5
 A la fin de la récupération, faire la requête suivante ::
 
-    update opencimetiere.om_utilisateur set om_profil = 6 - om_profil where om_utilisateur > 1 -- admin est dans la base
+    update opencimetiere.om_utilisateur set om_profil = 6 - om_profil where om_utilisateur > 1
+    -- admin est dans la base
 
 entreprise
 
@@ -290,58 +170,16 @@ Les sepultures type sont aussi dans une table. Il faut donc mettre la cle second
  
 Il est alors possible de lancer la requête d'intégration ::
 
-    insert into opencimetiere.emplacement
-        (emplacement, 
-        nature, 
-        numero, 
-        complement, 
-        voie, 
-        numerocadastre, 
-        famille,
-        numeroacte,
-        datevente,
-        terme,
-        duree,
-        dateterme,
-        nombreplace,
-        placeoccupe,
-        superficie,
-        placeconstat,
-        dateconstat,
-        observation,
-        plans,
-        positionx,
-        positiony,
-        photo,
-        libre,
-        sepulturetype
-        ) 
+    insert into opencimetiere.emplacement(emplacement, nature, numero, complement, voie, 
+        numerocadastre, famille, numeroacte,datevente, terme, duree, dateterme, nombreplace,
+        placeoccupe, superficie, placeconstat, dateconstat, observation, plans, positionx,
+        positiony, photo, libre, sepulturetype ) 
     select
-        emplacement,
-        nature,
-        numero,
-        complement,
-        voie,
-        numerocadastre,
-        famille,
-        numeroacte,
-        cast(datevente as date),
-        terme,
-        duree,
-        cast(dateterme as date),
-        nombreplace,
-        placeoccupe,
-        superficie,
-        placeconstat,
-        cast(dateconstat as date),
-        observation,
-        cast(plans as integer),
-        positionx,
-        positiony,
-        photo,
-        libre,
-        cast(sepulturetype as integer) 
-        from opencimetiere_temp.emplacement ;
+        emplacement, nature, numero, complement, voie, numerocadastre, famille,
+        numeroacte, cast(datevente as date), terme, duree, cast(dateterme as date),
+        nombreplace, placeoccupe, superficie, placeconstat, cast(dateconstat as date),
+        observation, cast(plans as integer), positionx, positiony, photo, libre,
+        cast(sepulturetype as integer) from opencimetiere_temp.emplacement ;
         
 Transfert defunt
 ================
@@ -367,7 +205,8 @@ Il se peut que certains défunts ne soient plus rattaché à une concession. On 
 
 Il faut ensuite détruire les défunts dans les emplacements inexistants ::
 
-    delete from opencimetiere_temp.defunt where emplacement in ( liste des emplacements séparés par une virgule);
+    delete from opencimetiere_temp.defunt where emplacement in
+        ( liste des emplacements séparés par une virgule);
 
 Il faut ensuite reconstitué la clé secondaire titre qui pointe sur la table titre :
 
@@ -383,44 +222,14 @@ Vérifier que tous vos champs "titre" sont des clés de la table titre ::
 
 Vous pouvez intégrer les défunts dans la base opencimetiere ::
 
-    insert into opencimetiere.defunt(
-      defunt,
-      nature,
-      taille,
-      emplacement,
-      titre,
-      nom ,
-      prenom ,
-      marital,
-      datenaissance ,
-      datedeces ,
-      lieudeces ,
-      dateinhumation ,
-      exhumation ,
-      dateexhumation ,
-      observation ,
-      reduction ,
-      datereduction ,
-      historique )
+    insert into opencimetiere.defunt( defunt, nature, taille, emplacement, titre, nom , prenom ,
+      marital, datenaissance , datedeces , lieudeces , dateinhumation , exhumation ,
+      dateexhumation , observation , reduction , datereduction , historique )
     select
-      defunt,
-      nature,
-      taille,
-      emplacement,
-      cast(titre as integer),
-      nom,
-      prenom ,
-      marital,
-      cast(datenaissance as date),
-      cast(datedeces as date),
-      lieudeces,
-      cast(dateinhumation as date),
-      exhumation,
-      cast(dateexhumation as date),
-      observation,
-      reduction,
-      cast(datereduction as date),
-      historique 
+      defunt, nature, taille, emplacement, cast(titre as integer), nom, prenom ,
+      marital,cast(datenaissance as date), cast(datedeces as date), lieudeces,
+      cast(dateinhumation as date), exhumation, cast(dateexhumation as date),
+      observation, reduction, cast(datereduction as date), historique 
       from opencimetiere_temp.defunt;
     
     -- compteur_defunt est le numero du dernier defunt saisi
@@ -439,7 +248,8 @@ remplacer les dates du format '0000-00-00' en null
 
 Ensuite ilfaut traiter le titre ::
 
-    update opencimetiere_temp.autorisation set titre = 1 where titre = 'Mr' or titre = 'M' or titre = 'Mr e';
+    update opencimetiere_temp.autorisation set titre = 1
+        where titre = 'Mr' or titre = 'M' or titre = 'Mr e';
     update opencimetiere_temp.autorisation set titre = 2 where titre = 'Mell' or titre = 'Mlle';
     update opencimetiere_temp.autorisation set titre = 3 where titre = 'Mme';
     update opencimetiere_temp.autorisation set titre = null where titre = '2 en' or titre='' ;
@@ -469,45 +279,16 @@ et détruire les autorisations non rattachées à un emplacement ::
 
 On peut ensuite transférer dans opencimetiere ::
 
-    insert into opencimetiere.autorisation(
-     autorisation,
-      emplacement,
-      nature,
-      titre ,
-      nom ,
-      marital,
-      prenom ,
-      datenaissance,
-      adresse1 ,
-      adresse2 ,
-      cp ,
-      ville ,
-      telephone ,
-      dcd ,
-      parente ,
-      observation)
+    insert into opencimetiere.autorisation(autorisation, emplacement, nature, titre , nom ,
+      marital, prenom , datenaissance, adresse1 , adresse2 , cp , ville , telephone , dcd ,
+      parente , observation)
     select
-      autorisation,
-      emplacement,
-      nature,
-      cast(titre as integer) ,
-      nom ,
-      marital ,
-      prenom ,
-      cast(datenaissance as date),
-      adresse1,
-      adresse2 ,
-      cp  ,
-      ville ,
-      telephone ,
-      cast(dcd as boolean),
-      parente,
-      observation
+      autorisation, emplacement, nature, cast(titre as integer) , nom , marital , prenom ,
+      cast(datenaissance as date), adresse1, adresse2 , cp  , ville , telephone ,
+      cast(dcd as boolean), parente, observation
       from opencimetiere_temp.autorisation;
-
-    
+      
     -- on change aussi la sequence avec son compteur autorisation
-    
     SELECT pg_catalog.setval('opencimetiere.autorisation_seq', compteur_autorisation, true);
 
 Transfert des travaux
@@ -517,13 +298,20 @@ Transferer la table de mysql dans la table travaux d'opencimetiere_temp.
 
 Dans les travaux, naturetravaux devient une table et il faut donc changer la clé secondaire ::
 
-    update opencimetiere_temp.travaux set naturetravaux = 6 where naturetravaux = 'Construction caveau T2 haut';
-    update opencimetiere_temp.travaux set naturetravaux = 13 where naturetravaux = 'Remise en place pierre tombale';
-    update opencimetiere_temp.travaux set naturetravaux = 2 where naturetravaux = 'Permis de construire';
-    update opencimetiere_temp.travaux set naturetravaux = 1 where naturetravaux = 'Autorisation de travaux';
-    update opencimetiere_temp.travaux set naturetravaux = 3 where naturetravaux = 'Autorisation de recouvrement';
-    update opencimetiere_temp.travaux set naturetravaux = 20 where naturetravaux = 'Nettoyage-Consolidation';
-    update opencimetiere_temp.travaux set naturetravaux = 11 where naturetravaux = 'Construction pierre tombale';
+    update opencimetiere_temp.travaux set naturetravaux = 6
+        where naturetravaux = 'Construction caveau T2 haut';
+    update opencimetiere_temp.travaux set naturetravaux = 13
+        where naturetravaux = 'Remise en place pierre tombale';
+    update opencimetiere_temp.travaux set naturetravaux = 2
+        where naturetravaux = 'Permis de construire';
+    update opencimetiere_temp.travaux set naturetravaux = 1
+        where naturetravaux = 'Autorisation de travaux';
+    update opencimetiere_temp.travaux set naturetravaux = 3
+        where naturetravaux = 'Autorisation de recouvrement';
+    update opencimetiere_temp.travaux set naturetravaux = 20
+        where naturetravaux = 'Nettoyage-Consolidation';
+    update opencimetiere_temp.travaux set naturetravaux = 11
+        where naturetravaux = 'Construction pierre tombale';
     update opencimetiere_temp.travaux set naturetravaux = Null where naturetravaux = '';
 
 Vérifier si les clés secondaires existent dans la table naturetravaux
@@ -532,25 +320,12 @@ Vérifier si les clés secondaires existent dans la table naturetravaux
 
 Procéder à l'insertion des données dans opencimetiere ::
 
-    insert into opencimetiere.travaux(
-      travaux,
-      entreprise,
-      emplacement,
-      datedebinter ,
-      datefininter ,
-      observation ,
-      naturedemandeur ,
-      naturetravaux) 
+    insert into opencimetiere.travaux(travaux, entreprise, emplacement, datedebinter ,
+      datefininter , observation , naturedemandeur ,naturetravaux) 
       select
-      idtravaux,
-      idintervenant,
-      emplacement,
-      datedebinter ,
-      datefininter ,
-      observation ,
-      naturedemandeur ,
-      cast(naturetravaux as integer) 
-        from opencimetiere_temp.travaux;
+      idtravaux, idintervenant, emplacement, datedebinter , datefininter ,
+      observation , naturedemandeur ,cast(naturetravaux as integer) 
+      from opencimetiere_temp.travaux;
     
     -- mettre a jour la sequence avec le dernier travaux saisi (compteur_travaux)
     
@@ -593,21 +368,11 @@ détruiser les dossiers où les emplacements n'existent pas ::
 
 Insérer les dossiers dans la base opencimetiere
 
-    insert into opencimetiere.dossier(
-      dossier,
-      emplacement,
-      fichier,
-      datedossier,
-      observation,
-      typedossier)
+    insert into opencimetiere.dossier(dossier, emplacement, fichier, datedossier,
+      observation, typedossier)
     select
-      dossier,
-      emplacement,
-      fichier,
-      cast(datedossier as date),
-      observation,
-      typedossier
-      from opencimetiere_temp.dossier;
+      dossier, emplacement, fichier, cast(datedossier as date),
+      observation, typedossier from opencimetiere_temp.dossier;
 
     -- mettre à jour la sequence dossier
     
@@ -627,7 +392,7 @@ le plus simple est de mettre vos fichiers en trs/1 et de mettre les fichiers dan
 Il est proposer auparavant de détruire les enregistrements dossiers qui ne correspondent pas à un fichier
 existant et qui plante la procédure de migration 
 
-script delete_dossier.php
+script delete_dossier.php ::
 
     <?php
     // Conexion à la base de données 
@@ -648,7 +413,7 @@ script delete_dossier.php
     pg_close($connexion);
     ?>
 
-script de connexion config.php
+script de connexion config.php ::
 
     <?php
     // connexion
@@ -660,7 +425,8 @@ script de connexion config.php
     $schema="opencimetiere";
     $table="dossier";
     // connexion pgsql
-    $connexion = pg_connect("host=".$host." port=5432 dbname=".$base." user=".$user." password=".$pwd);
+    $connexion = pg_connect("host=".$host." port=5432 dbname=".$base." user=".$user.
+        " password=".$pwd);
     if (!$connexion) {
       echo "erreur de connexion ".$host." ".$base." ".$user." ".$pwd;
       exit;
