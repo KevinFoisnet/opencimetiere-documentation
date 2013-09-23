@@ -713,10 +713,7 @@ Dans les fichiers sql, j ai remplacé avec l'éditeur  ::
         Ãš en è
         Ã en I
         Ã en E
-         en é
-         en à
-         en é
-        
+
 
 ou par requetes ::
 
