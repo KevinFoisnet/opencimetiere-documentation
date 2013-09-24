@@ -20,12 +20,20 @@ stratégique par les décideurs et pourtant combien important pour le service
 public de proximité. Logiciel libre opérationnel depuis des années,
 openCimetière a été en septembre 2006 élu "projet du mois" sur la forge. La
 version 3.x a pour objectif de porter l'application dans un environnement plus
-moderne (openMairie 4.x) avec de nouveaux outils disponibles comme la
-géolocalisation sur carte ou les tableaux de bord paramétrables qui viennent
+convivial (openMairie 4.x) avec de nouveaux outils  qui viennent
 compléter les outils déjà existants comme le requêteur, les courriers type ainsi
-que les états et sous-états. openCimetière reste un outil souple et adaptable à
-toute collectivité quelle que soit sa taille.
+que les états et sous-états. 
 
+La version 3.0.0 utilise openMairie 4.4.0 avec :
+
+* l'ergonomie jquery
+* les tableaux de bord individualisable avec widget
+* l'information géographique en interne avec openLayers
+* le générateur openMairie
+
+Cette version ne fonctionne qu'avec postgresql complété par postgis (si l'option SIG_interne est activée)
+
+openCimetière reste un outil souple et adaptable à toute collectivité quelle que soit sa taille.
 Les principales fonctions de l'application sont les suivantes :
 
 * la gestion de la place (défunt) dans les concessions,
@@ -39,6 +47,9 @@ Les principales fonctions de l'application sont les suivantes :
 
 Ce document a pour but de guider les utilisateurs et les développeurs dans la
 prise en main du projet.
+
+Il vous est présenté dans une première partie le manuel utilisateur et dans une deuxiéme partie le guide
+du développeur.
 
 Bonne lecture et n'hésitez pas à nous faire part de vos remarques à l'adresse
 suivante : contact@openmairie.org !

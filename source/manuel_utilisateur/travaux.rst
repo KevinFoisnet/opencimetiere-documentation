@@ -5,8 +5,8 @@ Les travaux
 ###########
 
 
-On accède à cet élément depuis l'onglet "Courrier" de l'emplacement.
-Tous les courriers liés à l'emplacement sont listés dans cet onglet.
+On accède à cet élément depuis l'onglet "Travaux" de l'emplacement.
+Tous les travaux liés à l'emplacement sont listés dans cet onglet.
 
 .. image:: opencimetiere--onglet-travaux-tableau.png
 

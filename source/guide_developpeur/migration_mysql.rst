@@ -1,14 +1,17 @@
 .. _migration_mysql:
 
 
-###############
-Migration mysql
-###############
+###################################################
+Migration mysql vers postgresql opencimetiere 2.0.0
+###################################################
 
 
 Nous proposons dans ce châpitre de vous exposer les requêtes de migration utilisées par la ville d'Arles
 pour passer de la version 2.10 mysql à la version 3.0.0. La migration a duré une journée.
 
+Les scripts et requêtes sont données à titre indicatif car il se peut que votre base mysql ait évolué de manière
+différente (utilisation des champs temp1 à 5, paramétrage différent en var.inc, erreur d'intégrité référentielle,
+problèmes d'encodage ...)
 
 La base postgresql se différencie avec celle de mysql (qui était avec le moteur MyIsam) par les éléments suivants
 
@@ -19,14 +22,11 @@ La base postgresql se différencie avec celle de mysql (qui était avec le moteu
 - le traitement de protection apostrophe en mysql est \' alors qu en postgres, il est '' donc il est utile de remplacer la protection
 dans le fichier d'export mysql 
 
-La version 3.0.0 se caractérise par de nouvelles tables de paramétrage titre_civilite, zone_type, voie_type ... et il est utile de
-passer par un schema intermédiaire opencimetiere_temp
+La version 3.0.0 se caractérise par de nouvelles tables de paramétrage titre_civilite, zone_type, voie_type ...
+et il est utile de passer par un schema intermédiaire opencimetiere_temp
 
-
-Construction de la base/schéma postgresql avec les scripts dans data/pgsql de la version 3.0.0
-==============================================================================================
-
-Vous devez d'abord executer les scripts de constitution de la base openMairie, schema openCimetiere.
+Vous devez d'abord executer les scripts de constitution de la base openmairie, dans le schema opencimetiere.
+Ensuite il faut créer le schéma intermédiaire opencimetiere_temp dans la base openmairie.
 
 Création d'un shéma opencimetiere_temp pour modifier les tables importées
 =========================================================================
@@ -111,7 +111,7 @@ La table des voies a la même difficultée avec voie_type et l'insertion se fait
     
     insert into opencimetiere.voie (voie,zone,voietype,voielib) 
     select
-        a.voie,a.zone,b.voie_type,a.voielib'
+        a.voie,a.zone,b.voie_type,a.voielib 
         from opencimetiere_temp.voie a, opencimetiere.voie_type b
         where a.voietype=b.libelle;
 
@@ -129,20 +129,20 @@ Utilisateur :
 Les noms de champs ont changé : om_utilisateur, om_profil et il y a des champs nouveau obligatoire ! om_collectivité (=1), om_type (=db)
 et email (peut être égal à '')
 Attention, om_profil est inversé 5=1 , 4=2 ...1=5
+
 A la fin de la récupération, faire la requête suivante ::
 
     update opencimetiere.om_utilisateur set om_profil = 6 - om_profil where om_utilisateur > 1
     -- admin est dans la base
 
-entreprise
-
-identreprise devient entreprise dans la nouvelle base et l'export de cette table peut se faire directement dans opencimetiere
+entreprise : le nom de champ identreprise devient entreprise dans la nouvelle base
+et ensuite l'export de cette table peut se faire directement dans opencimetiere
 
 
 Transfert des emplacements
 ==========================
 
-On transfere emplacement sur opencimetiere_temp
+On transfere emplacement depuis mysql dans la table emplacement d'opencimetiere_temp
 
 Il s'agit d'éliminer les dates '0000-00-00' dans les champs : datevente, dateterme et dateconstat ::
 
@@ -154,13 +154,13 @@ On peut aussi remplacer '0000-00-00' par null directement dans le fichier d'expo
 
 Il est possible que d'autre dates soient malformées comme '2008-01-00'.
 
-Si c'est le cas la requête d'intégration ne fonctionnera pas et il faudra corriger l erreur signalée
+Si c'est le cas la requête d'intégration ne fonctionnera pas et il faudra corriger l'erreur signalée lors des essais de tranfert
 
 Les plans sont dans une table avec un identifiant numérique. Il faut donc les reprendre avec une ou plusieurs requete (une par plan) ::
 
     update opencimetiere_temp.emplacement set plans = 1 where plans = 'moules.jpg';
 
-Les sepultures type sont aussi dans une table. Il faut donc mettre la cle secondaire numerique dans le champ sepulturetype ::
+Les sépultures type sont aussi dans une table. Il faut donc mettre la cle secondaire numerique dans le champ sepulturetype ::
 
     update opencimetiere_temp.emplacement set sepulturetype = 4 where sepulturetype like '%pierre%';
     update opencimetiere_temp.emplacement set sepulturetype = 2 where sepulturetype like '%basse%';
@@ -197,7 +197,8 @@ Il est proposé de traiter les dates égales à 0000-00-00 ::
 Attention;, il peut subsister des dates non conformes dans un format non accepté par postgres du style 2025-00-00 ou 2030-06-00 
 Il faut les rechercher et les traiter avant intégration.
 
-Il se peut que certains défunts ne soient plus rattaché à une concession. On trouve ces concessions en lancant la requete suivante ::
+Il se peut que certains défunts ne soient plus rattachés à une concession.
+On trouve ces concessions en lancant la requete suivante ::
 
     select emplacement.emplacement,defunt.emplacement  from opencimetiere_temp.defunt
         left join opencimetiere.emplacement on defunt.emplacement = emplacement.emplacement
@@ -208,7 +209,7 @@ Il faut ensuite détruire les défunts dans les emplacements inexistants ::
     delete from opencimetiere_temp.defunt where emplacement in
         ( liste des emplacements séparés par une virgule);
 
-Il faut ensuite reconstitué la clé secondaire titre qui pointe sur la table titre :
+Il faut ensuite reconstitué la clé secondaire titre qui pointe sur la table titre ::
 
     -- titre
     update opencimetiere_temp.defunt set titre = 1 where titre = 'Mr' or titre = 'M' or titre = 'M.';
@@ -242,11 +243,11 @@ Dans openCimetiere, il faut mettre à "Non" le verrou ::
 Transfert des autorisations :
 =============================
 
-Transferer les autorisations de mysql dans la base temporaire openmairie_temp, table autoriqation
+Transferer les autorisations de mysql dans la base temporaire opencimetiere_temp, table autoriqation
 
-remplacer les dates du format '0000-00-00' en null
+Remplacer ensuite les dates du format '0000-00-00' en null et traiter les dates malformées.
 
-Ensuite ilfaut traiter le titre ::
+Ensuite il faut traiter le champ titre ::
 
     update opencimetiere_temp.autorisation set titre = 1
         where titre = 'Mr' or titre = 'M' or titre = 'Mr e';
@@ -259,7 +260,7 @@ Vérifier avec la requête suivante ::
 
     select titre,count(titre) from opencimetiere_temp.autorisation group by titre order by titre;
     
-Il faut changer le champ dcd qui est booleen et non plus en varchar(3) ::
+Il faut changer le champ dcd qui est booléen et non plus en varchar(3) ::
 
     update opencimetiere_temp.autorisation set dcd = 't' where dcd = 'Oui' ;
     update opencimetiere_temp.autorisation set dcd = 'f' where dcd = 'Non' or dcd ='   ';
@@ -314,11 +315,11 @@ Dans les travaux, naturetravaux devient une table et il faut donc changer la cl�
         where naturetravaux = 'Construction pierre tombale';
     update opencimetiere_temp.travaux set naturetravaux = Null where naturetravaux = '';
 
-Vérifier si les clés secondaires existent dans la table naturetravaux
+Vérifier si les clés secondaires existent dans la table naturetravaux ::
 
     select distinct(naturetravaux) from opencimetiere_temp.travaux; 
 
-Procéder à l'insertion des données dans opencimetiere ::
+Procéder à l'insertion des données dans le schéma opencimetiere ::
 
     insert into opencimetiere.travaux(travaux, entreprise, emplacement, datedebinter ,
       datefininter , observation , naturedemandeur ,naturetravaux) 
@@ -361,12 +362,12 @@ Vérifier si les emplacements sont présents ::
     where emplacement.emplacement is null 
     order by dossier.emplacement;
 
-détruiser les dossiers où les emplacements n'existent pas ::
+détruire les dossiers où les emplacements n'existent pas ::
 
     delete from opencimetiere_temp.dossier where emplacement in 
     (liste des emplacements qui n existent pas séparés par une virgule);
 
-Insérer les dossiers dans la base opencimetiere
+Insérer les dossiers dans la base opencimetiere ::
 
     insert into opencimetiere.dossier(dossier, emplacement, fichier, datedossier,
       observation, typedossier)
@@ -404,7 +405,7 @@ script delete_dossier.php ::
            echo $row[$table]." ".$row['fichier']."";
           $sql="delete from ".$schema.".".$table." where ".$table."=".$row[$table];
           $res1 = pg_query($connexion, $sql);	
-              if ($res1)
+          if ($res1)
             echo "supprime<br>";
           else
             echo " erreur ".$sql;
@@ -468,9 +469,9 @@ refaire les emplacements de stockage en préférant un stockage externe a l'appl
 Problème d'encodage sur la base
 ===============================
 
-J'ai rencontré sur la base d'arles des problèmes d'encodage existant sur la base mysql que j'ai résolu de la manière suivante :
+J'ai rencontré sur la base d'arles des problèmes d'encodage sur la base mysql que j'ai résolu de la manière suivante :
 
-Dans les fichiers sql, j ai remplacé avec l'éditeur  ::
+Dans les fichiers texte des sauvegardes mysql, j ai remplacé avec l'éditeur  ::
 
         Ã§ en ç
         Ã© en é
@@ -481,7 +482,7 @@ Dans les fichiers sql, j ai remplacé avec l'éditeur  ::
         Ã en E
 
 
-ou par requetes ::
+ou j ai lancé des requêtes du type ::
 
     select emplacement,observation, replace(observation, 'Ã©', 'é')  from opencimetiere.emplacement;
     

@@ -153,9 +153,9 @@ Il est possible de géolocaliser l'emplacement :
 
 .. image:: ../_static/sig_emplacement.png
 
+Il est possible d'accéder dans la barre de l'interface au choix du cimetiere
+(paramétrage dans dyn/tab_sig_barre.inc.php)
 
-SIG externe
------------
 
-A compléter...
+
 

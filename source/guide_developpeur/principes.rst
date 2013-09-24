@@ -2,56 +2,16 @@
 
 
 #############
-Les principes
+Elements UML
 #############
 
+Nous vous proposons dans ce chapitre quelques éléments d'uml.
 
-openCimetière a pour but de gérer l'occupation des cimetieres.
-
-Dans la version 3.0.0, il est traité les concessions, les colombariums, les enfeux, les terrains communaux,
-les ossuaires et les dépositoires
-.
-
-Les principes sont les suivants :
-
-- la gestion des emplacements et la géolocalisation dans un cimetière sur fond de carte
-
-- la gestion de la place : les defunts
-
-- la gestion des autorisations (concessionnaires et ayants droits)
-
-- l'édition de lettre type ax concessionnaires et ayant droit
-
-- la gestion des pièces du dossier : arrêtés, notes, photos ...
-
-- la gestion des opérations funéraires (voir chapitre sur les operations)
+On peut retrouver l'analyse UML complète au lien suivant :
 
 
-Les évolutions de la version 3.0.0
-==================================
+http://www.openmairie.org/documentation/analyse-uml/opencimetiere/umlopencimetiere.pdf/view
 
-La version 3.0.0 utilise openMairie 4.1.0 avec :
-
-- l'ergonomie jquery
-
-- les tableaux de bord individualisable avec widget
-
-- l'information géographique en interne avec openLayers
-
-- le générateur openMairie (depuis la version OM 3.0.0)
-
-Cette version ne fonctionne qu'avec postgresql complété par postgis (pour la partie SIG)
-et dblink (pour les vues sur les bases externes)
-
-
-
-les fonctions 2.0.0 abandonnées
-===============================
-
-openCimetière n'est pas implémentée pour mysql en version 3.0.0
-
-Il est noté que la version mysql peut être reprise dans une version ultérieure si
-des moyens sont mis en oeuvre par des collectivités.
 
 
 Les cas d'utilisation d'openCimetière :
@@ -83,17 +43,6 @@ Diagramme de generalisation :
 .. image:: ../_static/emplacement_classe.png
 
     
-Nous vous proposons maintenant d'utiliser openCimetière :
-
-- de créer et localiser un emplacement
-
-- saisir les défunts
-
-- saisir les autorisations
-
-- saisir les courriers
-
-- télécharger les pièces du dossier de l'emplacement
 
 
     

@@ -8,7 +8,7 @@ Il est proposé de décrire dans ce paragraphe l'upload de document dans les
 dossiers dans l'onglet "dossier" de l'emplacement.
 
 On accède à cet élément depuis l'onglet "Dossier" de l'emplacement.
-Tous les courriers liés à l'emplacement sont listés dans cet onglet.
+Tous les dossiers liés à l'emplacement sont listés dans cet onglet.
 
 .. image:: opencimetiere--onglet-dossier-tableau.png
 

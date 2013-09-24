@@ -5,7 +5,7 @@ Calcul de la place occupée
 ##########################
 
 Ce traitement recalcule la place occupée sous la base des
-paramètres de dyn/var.inc (voir defunt)
+paramètres de om_parametre (voir paramétrage général)
 
 Ce traitement est interessant :
 

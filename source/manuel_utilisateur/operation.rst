@@ -22,7 +22,7 @@ Elles concernent :
 
 - le transfert d'un ou plusieurs défunt d'un emplacement à un autre
 
-Les transferts ont intégrés ce module avec la version 3.0.0.
+Les transferts ont intégré ce module avec la version 3.0.0.
 
 Les opérations peuvent avoir 2 états :
 
@@ -39,13 +39,13 @@ Pour traiter une opération ou la valider, il faut appuyer sur
 le bouton "v" de l'opération considérée.
 
 Il est alors lancé le traitement de validation (app/valid_operation.php)
-Les tables défunt, emplacement sont alors mises à jour et l accès au defunt
+Les tables défunt, emplacement sont alors mises à jour et l'accès au defunt
 via l'onglet de l'emplacement est permis
 
 ATTENTION, CE TRAITEMENT EST DEFINITIF et on ne peut pas retourner en arrière.
 
 Les opérations "traitées" sont visualisables dans l'onglet "opération-trt" de
-l'emplacement.En appuyant sur l'image pdf, on accéde à la liste des courriers automatiques
+l'emplacement. En appuyant sur l'icone pdf, on accéde à la liste des courriers automatiques
 a générer pour l'opération (si elles sont actives).
 
 

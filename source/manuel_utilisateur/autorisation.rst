@@ -36,6 +36,6 @@ Ayant-droit
 On accède à cet élément depuis l'onglet "Ayant-droit" de l'emplacement.
 Tous les ayants-droit liés à l'emplacement sont listés dans cet onglet.
 
-Le formulaire est identique à ce lui du concessionnaire avec une information
+Le formulaire est identique à celui du concessionnaire avec une information
 supplémentaire : le lien de parenté.
 

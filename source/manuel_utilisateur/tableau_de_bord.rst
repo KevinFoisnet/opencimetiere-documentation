@@ -57,19 +57,9 @@ Option SIG
 SIG interne
 -----------
 
-Pour l'instant, aucune information n'est présente dans le widget si c'est cette
-option qui est activée.
+Si il y a au moins un cimetiere saisi avec sa géométrie, ce widget affiche le plan du cimetiere avec l'ensemble des emplacements
+accessibles
 
-.. image:: opencimetiere--widget-localisation-sig-interne.png
-
-
-SIG externe
------------
-
-Pour l'instant, aucune information n'est présente dans le widget si c'est cette
-option qui est activée.
-
-.. image:: opencimetiere--widget-localisation-sig-externe.png
 
 
 .. _widget_supervision:
