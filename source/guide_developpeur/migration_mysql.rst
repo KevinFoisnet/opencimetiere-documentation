@@ -263,7 +263,7 @@ Vérifier avec la requête suivante ::
 Il faut changer le champ dcd qui est booléen et non plus en varchar(3) ::
 
     update opencimetiere_temp.autorisation set dcd = 't' where dcd = 'Oui' ;
-    update opencimetiere_temp.autorisation set dcd = 'f' where dcd = 'Non' or dcd ='   ';
+    update opencimetiere_temp.autorisation set dcd = 'f' where dcd = 'Non' or dcd ='';
 
 Il faut ensuite vérifier que tous les emplacements soient existants ::
 
@@ -437,7 +437,7 @@ script de connexion config.php ::
 
 lancer la procédure de migration om_filestorage_migrate.php en paramétrant sans le script ::
         
-    le repertoire de départ
+    //le repertoire de départ
     
     $source_conf = array(
         "storage" => "deprecated",

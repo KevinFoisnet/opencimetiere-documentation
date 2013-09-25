@@ -135,8 +135,7 @@ La localisation d'un emplacement sur un plan possède deux modes :
   compte.
 
 * la visualisation de l'emplacement : depuis le tableau ou depuis le formulaire
-  en mode visualisation, il est possible de cliquer sur l'action "Visualiser sur
-  plan" pour voir le positionnement de l'emplacement sur le plan.
+   il est possible de visualiser ou mettre à jour le positionnement de l'emplacement sur la carte.
 
   .. image:: opencimetiere--geolocalisation-plan-visualiser-emplacement.png
 

@@ -28,7 +28,6 @@ Voici le descriptif des paramètres :
      
        - plan,
        - sig_interne,
-       - sig_externe.
 
    * - .. _taille_cercueil:
        

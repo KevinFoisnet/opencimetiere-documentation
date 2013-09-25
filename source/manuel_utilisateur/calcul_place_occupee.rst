@@ -5,7 +5,7 @@ Calcul de la place occupée
 ##########################
 
 Ce traitement recalcule la place occupée sous la base des
-paramètres de om_parametre (voir paramétrage général)
+paramètres de om_parametre (:ref:`paramétrage général <taille_cercueil>`)
 
 Ce traitement est interessant :
 

@@ -85,7 +85,7 @@ SIG interne
 -----------
 
 Dans le menu, option administration, il est possible de paramétrer les cartes (om_sig_map) et de
-paramétrer les liens wms (om_sig_wms) si l'option sig_interne est choisi.
+paramétrer les liens wms (om_sig_wms) si l'option sig_interne est choisie.
 (voir le guide du développeur openMairie)
 
 
