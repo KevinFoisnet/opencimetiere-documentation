@@ -4,7 +4,7 @@
 Opération
 #########
 
-Nous vous proposons dans ce chapitre d'utiliser les operations
+Nous vous proposons dans ce chapitre d'utiliser les opérations.
 
 
 Les opérations ont été implémentées par la version 2.02
