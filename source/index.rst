@@ -1,5 +1,4 @@
-.. opencimetiere documentation master file, created by
-   sphinx-quickstart on Wed Jul 20 17:30:38 2011.
+.. opencimetiere documentation master file.
 
 ===============================
 openCimetière 3.0 documentation
@@ -47,9 +46,6 @@ Les principales fonctions de l'application sont les suivantes :
 
 Ce document a pour but de guider les utilisateurs et les développeurs dans la
 prise en main du projet.
-
-Il vous est présenté dans une première partie le manuel utilisateur et dans une deuxiéme partie le guide
-du développeur.
 
 Bonne lecture et n'hésitez pas à nous faire part de vos remarques à l'adresse
 suivante : contact@openmairie.org !

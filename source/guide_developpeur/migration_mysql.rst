@@ -20,7 +20,7 @@ La base postgresql se différencie avec celle de mysql (qui était avec le moteu
 - la valeur par défaut 0000-00-00 des champs date mysql n'est pas acceptée dans postgresql
 
 - le traitement de protection apostrophe en mysql est \' alors qu en postgres, il est '' donc il est utile de remplacer la protection
-dans le fichier d'export mysql 
+  dans le fichier d'export mysql 
 
 La version 3.0.0 se caractérise par de nouvelles tables de paramétrage titre_civilite, zone_type, voie_type ...
 et il est utile de passer par un schema intermédiaire opencimetiere_temp
