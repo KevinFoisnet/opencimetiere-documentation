@@ -99,7 +99,7 @@ html_theme = 'default'
 #html_theme_options = {}
 
 # Add any paths that contain custom themes here, relative to this directory.
-html_theme_path = ['_themes']
+#html_theme_path = []
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
@@ -178,7 +178,7 @@ latex_paper_size = 'a4'
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'opencimetiere.tex', u'opencimetiere Documentation',
+  ('index', 'opencimetiere.tex', u'openCimetière Documentation',
    u'openMairie', 'manual'),
 ]
 
@@ -214,6 +214,6 @@ latex_elements['preamble'] = '\\setcounter{secnumdepth}{5}\\setcounter{tocdepth}
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'opencimetiere', u'opencimetiere Documentation',
+    ('index', 'opencimetiere', u'openCimetière Documentation',
      [u'openMairie'], 1)
 ]

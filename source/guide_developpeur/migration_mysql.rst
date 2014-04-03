@@ -475,11 +475,11 @@ Dans les fichiers texte des sauvegardes mysql, j ai remplacé avec l'éditeur  :
 
         Ã§ en ç
         Ã© en é
-        Ã en I ?
+        Ã. en I ?
         Ã‰ en E ?
         Ãš en è
-        Ã en I
-        Ã en E
+        Ã. en I
+        Ã. en E
 
 
 ou j ai lancé des requêtes du type ::
