@@ -81,4 +81,3 @@ Contributeurs
 * `atReal <http://www.atreal.fr>`_
 * Florent Michon
 * François Raynaud
-

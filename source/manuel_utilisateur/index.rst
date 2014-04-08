@@ -4,7 +4,6 @@
 Manuel de l'utilisateur
 #######################
 
-
 .. toctree::
     :numbered:
     :maxdepth: 3
